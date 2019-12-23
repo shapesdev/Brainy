@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bab8127f92ebbf4587894b221de74ef, type: 3}
+  m_Name: GeographyLevel3
+  m_EditorClassIdentifier: 
+  id: 1
+  subjectName: Geography
+  levelNumber: 3
+  levelName: Locations
+  loseMotivation: 
+  winMotivation: 
+  levelImage: {fileID: 21300000, guid: 98676f4ea9676d0489c826c0ca91ce28, type: 3}
+  questions:
+  - {fileID: 11400000, guid: 2b64083c706611d419b6601c5b4846fc, type: 2}
+  - {fileID: 11400000, guid: 305e6912bdba30e40a6a4fe6b383d103, type: 2}
+  - {fileID: 11400000, guid: d81efe0887c87a847960d378e0a0f3fa, type: 2}
+  - {fileID: 11400000, guid: 359679c96f0b1e94380da6cf9883cda1, type: 2}
+  - {fileID: 11400000, guid: c78805a6ac27f4447a64bd3e04bdf3dd, type: 2}
+  - {fileID: 11400000, guid: 9839f4d2c610bf649b40a9cd0dce58fb, type: 2}
+  - {fileID: 11400000, guid: 1360187e08fbc5a45919f9ee29f941bd, type: 2}
+  - {fileID: 11400000, guid: c557f877d0311ad4199a13b2544da2b8, type: 2}
+  - {fileID: 11400000, guid: 272c8b5ac1a58d140bfea9cc3e532365, type: 2}
+  - {fileID: 11400000, guid: 50723e79b79727540b66f8e2c3d9b2ae, type: 2}
+  maxScore: 100
+  minScore: 30

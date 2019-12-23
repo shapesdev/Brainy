@@ -1,0 +1,1 @@
+Need 12 skins for player to purchase, will be displayed on profile and when playing against other players

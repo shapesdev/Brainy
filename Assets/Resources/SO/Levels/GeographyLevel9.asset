@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bab8127f92ebbf4587894b221de74ef, type: 3}
+  m_Name: GeographyLevel9
+  m_EditorClassIdentifier: 
+  id: 1
+  subjectName: Geography
+  levelNumber: 9
+  levelName: Globalization
+  loseMotivation: 
+  winMotivation: 
+  levelImage: {fileID: 21300000, guid: 34857ef8d28ad564bbe1a269a05baa9a, type: 3}
+  questions:
+  - {fileID: 11400000, guid: bb60bbddff843ee40977ed7bba3b5826, type: 2}
+  - {fileID: 11400000, guid: eb8579b5148132d4b957609af4d9cd2d, type: 2}
+  - {fileID: 11400000, guid: 95871036f8eb16b45b257f775c0b2a26, type: 2}
+  - {fileID: 11400000, guid: 1e09a7118162110499dd532ecf68f7d0, type: 2}
+  - {fileID: 11400000, guid: f87d522c2c9ba9d4aae612e5f66877d2, type: 2}
+  - {fileID: 11400000, guid: 7c688d28c68f3b9428231b5a557a46cc, type: 2}
+  - {fileID: 11400000, guid: 648277e35bca465419ac813cc639ffa9, type: 2}
+  - {fileID: 11400000, guid: 73a3e80d008b0dd42878043208b30749, type: 2}
+  - {fileID: 11400000, guid: f064a25a7a1c26e428c55c49d8d7bd75, type: 2}
+  - {fileID: 11400000, guid: b94e0d4f436ccfd4aaeba9830174ef1b, type: 2}
+  maxScore: 100
+  minScore: 40

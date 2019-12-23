@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a0c621bfdda7aa4fba4f22811d8bbb4, type: 3}
+  m_Name: PictureAnswersQuestion3
+  m_EditorClassIdentifier: 
+  question: 
+  correctAnswer: Japanese Yen (JPY)
+  options: []
+  imageOptions:
+  - {fileID: 21300000, guid: 58da9104701cf994eb6c7464f29cc295, type: 3}
+  - {fileID: 21300000, guid: 9a860b81f8df73d4e95533af7fadef0b, type: 3}
+  - {fileID: 21300000, guid: 8b0ab02cb21dc94438da37cf6e16ed34, type: 3}
+  - {fileID: 21300000, guid: fe5f44b4481ac5d41961bcacb97063c7, type: 3}
+  picture: {fileID: 21300000, guid: 58da9104701cf994eb6c7464f29cc295, type: 3}

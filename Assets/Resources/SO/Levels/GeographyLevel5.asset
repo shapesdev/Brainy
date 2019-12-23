@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bab8127f92ebbf4587894b221de74ef, type: 3}
+  m_Name: GeographyLevel5
+  m_EditorClassIdentifier: 
+  id: 1
+  subjectName: Geography
+  levelNumber: 5
+  levelName: Inhabitants
+  loseMotivation: 
+  winMotivation: 
+  levelImage: {fileID: 21300000, guid: af74f2576c0fc9e4d9e189cd5ef046bd, type: 3}
+  questions:
+  - {fileID: 11400000, guid: f2c8a88e45ed43e4285bde004cc28db0, type: 2}
+  - {fileID: 11400000, guid: 036ccd04c7cc73549bdd3b56e4190184, type: 2}
+  - {fileID: 11400000, guid: 0acb05d93b197384babe9837df6666a7, type: 2}
+  - {fileID: 11400000, guid: b273de5a0f81f6441ac2654682bc1c33, type: 2}
+  - {fileID: 11400000, guid: 89716882484724c41bf751a2edc8d9ea, type: 2}
+  - {fileID: 11400000, guid: 8a6d0a51aa840ca469d462958aa08b34, type: 2}
+  - {fileID: 11400000, guid: 670d2693a49db304d8cfe64a0d048ac0, type: 2}
+  - {fileID: 11400000, guid: 360bd0c58aef6bb4cb2f8a9e3fd388d0, type: 2}
+  - {fileID: 11400000, guid: e862b5f62ad4202458f4912aa553fe75, type: 2}
+  - {fileID: 11400000, guid: 6e7d9ac4e156c7243aa84acc61bac039, type: 2}
+  maxScore: 100
+  minScore: 30

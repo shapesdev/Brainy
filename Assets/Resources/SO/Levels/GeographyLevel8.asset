@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bab8127f92ebbf4587894b221de74ef, type: 3}
+  m_Name: GeographyLevel8
+  m_EditorClassIdentifier: 
+  id: 1
+  subjectName: Geography
+  levelNumber: 8
+  levelName: Agriculture
+  loseMotivation: 
+  winMotivation: 
+  levelImage: {fileID: 21300000, guid: 34f42a7764a37a44b978e7776a0e7bc0, type: 3}
+  questions:
+  - {fileID: 11400000, guid: c2bdec5c06e69364fac35590c10b43c5, type: 2}
+  - {fileID: 11400000, guid: 5b91930cffcc3f84195083a96f316742, type: 2}
+  - {fileID: 11400000, guid: 157981d060b685a48a1ec9be4771ced8, type: 2}
+  - {fileID: 11400000, guid: c66ea46e43aefcf439e9e97b21599da1, type: 2}
+  - {fileID: 11400000, guid: ddc22512976579c45b307d4b52c7fcce, type: 2}
+  - {fileID: 11400000, guid: 9c9793dda9aa2af4ba2a0db3cdcc8e66, type: 2}
+  - {fileID: 11400000, guid: b8c78733aaacc0c48a43a7af7042e953, type: 2}
+  - {fileID: 11400000, guid: 26509ff29d31b9843bdceb6982234d95, type: 2}
+  - {fileID: 11400000, guid: acf27821e61504044a03df4b9f63b714, type: 2}
+  - {fileID: 11400000, guid: b33693b75c3ddf4448cd7daec78f051e, type: 2}
+  maxScore: 100
+  minScore: 30

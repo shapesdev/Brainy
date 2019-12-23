@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd69bfc483fc26c4a87002572d9a17c2, type: 3}
+  m_Name: EconomicsLevel1
+  m_EditorClassIdentifier: 
+  id: 3
+  subjectName: Economics
+  levelNumber: 1
+  levelName: Companies
+  loseMotivation: 
+  winMotivation: 
+  levelImage: {fileID: 21300000, guid: e101893462243c04d8c3503dd15586f5, type: 3}
+  questions:
+  - {fileID: 11400000, guid: bd637222f0c760445af62643a8d8b72e, type: 2}
+  - {fileID: 11400000, guid: d6ad867e37f5cc346a68b820ebb7cb1c, type: 2}
+  - {fileID: 11400000, guid: 9d827e42796883c44b613f55c8a72997, type: 2}
+  - {fileID: 11400000, guid: d44a5d04cfbbefa468f8b28954444e05, type: 2}
+  - {fileID: 11400000, guid: 30c07699d76e2f3469edb913b7fac1ba, type: 2}
+  - {fileID: 11400000, guid: cc7d94441a1251b489e3802a71e2c209, type: 2}
+  - {fileID: 11400000, guid: 1a4306ef6d0453745ad40154103f906c, type: 2}
+  - {fileID: 11400000, guid: 99ee45903d6abd044a31663dda35e49c, type: 2}
+  - {fileID: 11400000, guid: 8cee960d6ebe9384b9883ed43266d869, type: 2}
+  - {fileID: 11400000, guid: 617887e7a45c28a4ca81555c09a47159, type: 2}
+  maxScore: 100
+  minScore: 30

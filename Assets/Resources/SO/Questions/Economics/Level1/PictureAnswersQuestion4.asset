@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a0c621bfdda7aa4fba4f22811d8bbb4, type: 3}
+  m_Name: PictureAnswersQuestion4
+  m_EditorClassIdentifier: 
+  question: 
+  correctAnswer: Huawei
+  options: []
+  imageOptions:
+  - {fileID: 21300000, guid: bc37cfc3515bf22429a8f991594cc033, type: 3}
+  - {fileID: 21300000, guid: 14fb909202019b547ae40036dee1cb77, type: 3}
+  - {fileID: 21300000, guid: 7a099b07246c95b4eacc540054318686, type: 3}
+  - {fileID: 21300000, guid: c86c8b1bf74c4da43acbf86ca6157675, type: 3}
+  picture: {fileID: 21300000, guid: bc37cfc3515bf22429a8f991594cc033, type: 3}

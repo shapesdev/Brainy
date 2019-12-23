@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a0c621bfdda7aa4fba4f22811d8bbb4, type: 3}
+  m_Name: PictureAnswersQuestion7
+  m_EditorClassIdentifier: 
+  question: 
+  correctAnswer: Mongolian Tugrik (MNT)
+  options: []
+  imageOptions:
+  - {fileID: 21300000, guid: 1165d8e054cdb114283fab1e2742fae8, type: 3}
+  - {fileID: 21300000, guid: 4e6729c3cfd084d45a104a7edca2f1e7, type: 3}
+  - {fileID: 21300000, guid: fe424e82336d9a149898391019c8b1d4, type: 3}
+  - {fileID: 21300000, guid: 2efabf49672266a469f489236273629f, type: 3}
+  picture: {fileID: 21300000, guid: 1165d8e054cdb114283fab1e2742fae8, type: 3}

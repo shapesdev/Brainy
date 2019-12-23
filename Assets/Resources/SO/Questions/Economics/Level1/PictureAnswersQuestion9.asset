@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a0c621bfdda7aa4fba4f22811d8bbb4, type: 3}
+  m_Name: PictureAnswersQuestion9
+  m_EditorClassIdentifier: 
+  question: 
+  correctAnswer: Walmart
+  options: []
+  imageOptions:
+  - {fileID: 21300000, guid: de0b8c0658503b94cb938f75c2ce2b5c, type: 3}
+  - {fileID: 21300000, guid: 185daf9b02a8a5b42aa9a4e2eb66d8c5, type: 3}
+  - {fileID: 21300000, guid: edeadb68a464e7247aa918ce306512ce, type: 3}
+  - {fileID: 21300000, guid: 2c516c1ebb73786499d39b1254549074, type: 3}
+  picture: {fileID: 21300000, guid: de0b8c0658503b94cb938f75c2ce2b5c, type: 3}

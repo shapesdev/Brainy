@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bab8127f92ebbf4587894b221de74ef, type: 3}
+  m_Name: GeographyLevel10
+  m_EditorClassIdentifier: 
+  id: 1
+  subjectName: Geography
+  levelNumber: 10
+  levelName: Records
+  loseMotivation: 
+  winMotivation: 
+  levelImage: {fileID: 21300000, guid: 7dc595a262c326f419ea225e37749d71, type: 3}
+  questions:
+  - {fileID: 11400000, guid: 7e7bd4109b33ef04a955a6b1f276424e, type: 2}
+  - {fileID: 11400000, guid: ca778e6eaaa82f444a9b6584b78c1f47, type: 2}
+  - {fileID: 11400000, guid: 160cf379987254a40aa2eb9660d969a8, type: 2}
+  - {fileID: 11400000, guid: f64925ca755b68d4591746d667e7ed21, type: 2}
+  - {fileID: 11400000, guid: 60191c62aa376cb4a8cf5000aad0b185, type: 2}
+  - {fileID: 11400000, guid: 771494e190ec7a5488d8fce8e03d1a4c, type: 2}
+  - {fileID: 11400000, guid: 84c34c3c9a1b03c44b3ae1a973227f49, type: 2}
+  - {fileID: 11400000, guid: 73cc7e270023f0d45ac8a40ecdde34da, type: 2}
+  - {fileID: 11400000, guid: e76e6d57e68e4554ead531fe458f2c33, type: 2}
+  - {fileID: 11400000, guid: c99c68395eb130846966151cee9f453b, type: 2}
+  maxScore: 100
+  minScore: 50

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a0c621bfdda7aa4fba4f22811d8bbb4, type: 3}
+  m_Name: PictureAnswersQuestion5
+  m_EditorClassIdentifier: 
+  question: 
+  correctAnswer: Gucci
+  options: []
+  imageOptions:
+  - {fileID: 21300000, guid: 1db94063b8cfc6542abd01c85c4ddddc, type: 3}
+  - {fileID: 21300000, guid: 30531fa0287ec614ea450e07f1ce3e23, type: 3}
+  - {fileID: 21300000, guid: e3bf3f92040c369409a78d7fd4b4331b, type: 3}
+  - {fileID: 21300000, guid: 862bdd975769eb34ba73559f1161e130, type: 3}
+  picture: {fileID: 21300000, guid: 1db94063b8cfc6542abd01c85c4ddddc, type: 3}

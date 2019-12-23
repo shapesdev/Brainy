@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a0c621bfdda7aa4fba4f22811d8bbb4, type: 3}
+  m_Name: PictureAnswersQuestion7
+  m_EditorClassIdentifier: 
+  question: 
+  correctAnswer: Lincoln
+  options: []
+  imageOptions:
+  - {fileID: 21300000, guid: 19fbf1511fe42bc47866a77049f8da4e, type: 3}
+  - {fileID: 21300000, guid: 4973a8adbb7061249bbc7e843813d9b2, type: 3}
+  - {fileID: 21300000, guid: ef0462d5d2c6b93468808fec64b97969, type: 3}
+  - {fileID: 21300000, guid: db43ed08ddc489f4e85dc50eecc99db9, type: 3}
+  picture: {fileID: 21300000, guid: 19fbf1511fe42bc47866a77049f8da4e, type: 3}

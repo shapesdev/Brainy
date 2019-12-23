@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1fe2675733f678498d6f551b138ad63, type: 3}
+  m_Name: PictureQuestion7
+  m_EditorClassIdentifier: 
+  question: Who is this person?
+  correctAnswer: Cher Wang
+  options:
+  - Cher Wang
+  - Melanie Perkins
+  - Sheryl Sandberg
+  - Wang Laichun
+  imageOptions: []
+  picture: {fileID: 21300000, guid: 49b435a2fb8520840b3b0cd2dd51b8fe, type: 3}

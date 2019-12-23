@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a0c621bfdda7aa4fba4f22811d8bbb4, type: 3}
+  m_Name: PictureAnswersQuestion4
+  m_EditorClassIdentifier: 
+  question: 
+  correctAnswer: British Pound (GBP)
+  options: []
+  imageOptions:
+  - {fileID: 21300000, guid: 2234f55b2dca78740a5c4124ece96557, type: 3}
+  - {fileID: 21300000, guid: 37b8e18d3cae74149aba551e6fe85cbe, type: 3}
+  - {fileID: 21300000, guid: 7456b0333b292194bac35cdb9e3be5ee, type: 3}
+  - {fileID: 21300000, guid: 9800b8ef8ccaff24893a98946e2c6bda, type: 3}
+  picture: {fileID: 21300000, guid: 2234f55b2dca78740a5c4124ece96557, type: 3}

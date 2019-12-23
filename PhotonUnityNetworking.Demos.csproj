@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{142F51F6-0369-CEFC-EAC5-3EE260997273}</ProjectGuid>
+    <ProjectGuid>{7616EDAB-85FF-5532-E813-012AB371AC84}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>PhotonUnityNetworking.Demos</AssemblyName>
@@ -294,7 +294,7 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
  </Reference>
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -363,37 +363,37 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
  <Reference Include="UDP">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Plugins/UDP/UDP.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Plugins/UDP/UDP.dll</HintPath>
  </Reference>
  <Reference Include="Editor">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
  </Reference>
  <Reference Include="Purchasing.Common">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Plugins/UnityPurchasing/Bin/Purchasing.Common.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Plugins/UnityPurchasing/Bin/Purchasing.Common.dll</HintPath>
  </Reference>
  <Reference Include="Stores">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
  </Reference>
  <Reference Include="Apple">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
  </Reference>
  <Reference Include="FacebookStore">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Plugins/UnityPurchasing/Bin/Facebook/FacebookStore.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Plugins/UnityPurchasing/Bin/Facebook/FacebookStore.dll</HintPath>
  </Reference>
  <Reference Include="Security">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Plugins/UnityPurchasing/Bin/Security/live/Security.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Plugins/UnityPurchasing/Bin/Security/live/Security.dll</HintPath>
  </Reference>
  <Reference Include="Tizen">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll</HintPath>
  </Reference>
  <Reference Include="winrt">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/Donc3 Kebabas/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -416,11 +416,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{2A5A0612-997B-8B32-96D9-BC5B1F8E5512}</Project>      <Name>PhotonRealtime</Name>    </ProjectReference>
+      <Project>{8D3BB059-41CD-271A-2F34-8616E1387236}</Project>      <Name>PhotonRealtime</Name>    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{270B7E80-EFA4-A134-9805-7F088670F0B7}</Project>      <Name>PhotonUnityNetworking</Name>    </ProjectReference>
+      <Project>{B44A6DCB-F540-6501-814B-0E82AD178063}</Project>      <Name>PhotonUnityNetworking</Name>    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{979EB050-5B20-7C24-3EB0-D3E4B21A5403}</Project>      <Name>PhotonUnityNetworking.Utilities</Name>    </ProjectReference>
+      <Project>{EE535A2C-EA28-3CEA-32E6-A733C95F4461}</Project>      <Name>PhotonUnityNetworking.Utilities</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

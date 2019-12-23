@@ -15,8 +15,7 @@ MonoBehaviour:
   subjectName: History
   levelNumber: 1
   levelName: Historical
-  loseMotivation: 
-  winMotivation: 
+  winMotivation: "\u201CHistory is written by winners.\u201D - Napoleon Bonaparte"
   levelImage: {fileID: 0}
   questions:
   - {fileID: 11400000, guid: 4110412c50ac3fd49ba234f73210c308, type: 2}

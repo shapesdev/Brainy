@@ -15,8 +15,8 @@ MonoBehaviour:
   subjectName: Economics
   levelNumber: 2
   levelName: Entrepreneurs
-  loseMotivation: 
-  winMotivation: 
+  winMotivation: '"If you really look closely, most overnight successes took a long
+    time." - Steve Jobs'
   levelImage: {fileID: 21300000, guid: e101893462243c04d8c3503dd15586f5, type: 3}
   questions:
   - {fileID: 11400000, guid: c93c3c0e387b51d4793d5ace7bd54264, type: 2}

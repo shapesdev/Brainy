@@ -16,8 +16,6 @@ public class MenuUIManager : MonoBehaviour {
     public Text achievementText;
     public GameObject info;
 
-    public GameObject domisdx;
-
     event Action<bool> OnLeaderboard = delegate { };
     event Action<bool> OnProfile = delegate { };
     event Action<bool> OnShop = delegate { };
@@ -41,17 +39,6 @@ public class MenuUIManager : MonoBehaviour {
     public void ShowInfoAboutAds()
     {
         info.SetActive(true);
-    }
-
-    public void TurnOnDomisDx()
-    {
-        domisdx.SetActive(true);
-        Invoke("TurnOffDomisDx", 0.5f);
-    }
-
-    private void TurnOffDomisDx()
-    {
-        domisdx.SetActive(false);
     }
 
     public void CloseInfoAboutAds()
@@ -114,12 +101,6 @@ public class MenuUIManager : MonoBehaviour {
     {
         achievementText.text = "New Achievement Unlocked - " + ach.achievementName;
         achievement.SetActive(true);
-        Invoke("OpenAchievement2", 1.5f);
-    }
-
-    private void OpenAchievement2()
-    {
-        achievement.SetActive(false);
     }
 
     private void OpenNoInternet()

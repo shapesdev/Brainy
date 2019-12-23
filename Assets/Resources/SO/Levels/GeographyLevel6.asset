@@ -15,8 +15,8 @@ MonoBehaviour:
   subjectName: Geography
   levelNumber: 6
   levelName: Settlement
-  loseMotivation: 
-  winMotivation: 
+  winMotivation: "\u201CWhen you win, say nothing. When you lose, say less.\u201D
+    - Paul Brown"
   levelImage: {fileID: 21300000, guid: 605ab60ff805a4a4cb3fa389efde3676, type: 3}
   questions:
   - {fileID: 11400000, guid: 7d7ecf10a5a56f9498c75790f5b417d2, type: 2}

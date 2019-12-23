@@ -34,10 +34,6 @@ public class PlayFabController : IPlayFabController
 
     private void OnLoginAndroidSuccess(LoginResult result)
     {
-        if(result.PlayFabId == "3F4D54B9DB7930DC")
-        {
-            MenuUIManager.menuUI.TurnOnDomisDx();
-        }
         model.SetPlayFabId(result.PlayFabId);
 
         var eventArgs = new LoggedInEventArgs();

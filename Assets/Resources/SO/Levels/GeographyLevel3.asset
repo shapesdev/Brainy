@@ -16,7 +16,8 @@ MonoBehaviour:
   levelNumber: 3
   levelName: Locations
   loseMotivation: 
-  winMotivation: 
+  winMotivation: '"The determination to win is the better part of winning." - Daisaku
+    Ikeda'
   levelImage: {fileID: 21300000, guid: 98676f4ea9676d0489c826c0ca91ce28, type: 3}
   questions:
   - {fileID: 11400000, guid: 2b64083c706611d419b6601c5b4846fc, type: 2}

@@ -21,10 +21,14 @@ public class GameView : MonoBehaviour {
     public Text levelName;
     public Text winIqGained;
     public Text questionNr;
+    public Image soundImage;
 
     public GameObject pictureObject;
     public GameObject generalObject;
     public GameObject pictureAnswersObject;
+
+    public Sprite SoundOff;
+    public Sprite SoundOn;
 
     private GameController gameController;
 
@@ -38,6 +42,18 @@ public class GameView : MonoBehaviour {
         levelImage.sprite = LevelConfig.instance.levels[LevelConfig.instance.currentlevel].levelType.levelImage;
         levelName.text = "Level " + LevelConfig.instance.levels[LevelConfig.instance.currentlevel].levelType.levelNumber + "\n"
             + LevelConfig.instance.levels[LevelConfig.instance.currentlevel].levelType.levelName;
+
+        Debug.Log(PlayerPrefs.GetInt("NoSounds"));
+        if(PlayerPrefs.GetInt("NoSounds") == 0)
+        {
+            soundImage.sprite = SoundOn;
+            AudioListener.volume = 1;
+        }
+        else
+        {
+            soundImage.sprite = SoundOff;
+            AudioListener.volume = 0;
+        }
     }
 
     public void ShowQuestion(Question question)
@@ -123,14 +139,36 @@ public class GameView : MonoBehaviour {
         }
     }
 
+    public void TurnSound(Image img)
+    {
+        if(PlayerPrefs.GetInt("NoSounds") == 0)
+        {
+            img.sprite = SoundOff;
+            AudioListener.volume = 0;
+            PlayerPrefs.SetInt("NoSounds", 1);
+        }
+        else
+        {
+            img.sprite = SoundOn;
+            AudioListener.volume = 1;
+            PlayerPrefs.SetInt("NoSounds", 0);
+        }
+    }
+
     public void ShowLosePanel()
     {
+        audioSource.clip = soundEffects[2].clip;
+        audioSource.volume = soundEffects[2].volume;
+        audioSource.Play();
         losePanel.SetActive(true);
-        loseText.text = LevelConfig.instance.levels[LevelConfig.instance.currentlevel].levelType.loseMotivation;
+        loseText.text = "You just gonna leave with this massive L?";
     }
 
     public void ShowLosePanel2(int score)
     {
+        audioSource.clip = soundEffects[2].clip;
+        audioSource.volume = soundEffects[2].volume;
+        audioSource.Play();
         losePanel.SetActive(true);
         loseText.text = "Get a minimum of: " + score + " points to unlock next level!";
     }

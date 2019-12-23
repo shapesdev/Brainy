@@ -15,8 +15,10 @@ MonoBehaviour:
   subjectName: Geography
   levelNumber: 4
   levelName: Politics
-  loseMotivation: 
-  winMotivation: 
+  winMotivation: "\u201CI\u2019ve missed more than 9000 shots in my career. I\u2019ve
+    lost almost 300 games. 26 times, I\u2019ve been trusted to take the game winning
+    shot and missed. I\u2019ve failed over and over and over again in my life. And
+    that is why I succeed.\u201D - Michael Jordan"
   levelImage: {fileID: 21300000, guid: 8f454b646c8c0dc4b8cb45adfa27e97b, type: 3}
   questions:
   - {fileID: 11400000, guid: 387570df84395d640ad85a200a430998, type: 2}

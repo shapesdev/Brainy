@@ -10,8 +10,6 @@ public class LevelType : ScriptableObject
 
     public string levelName;
 
-    public string loseMotivation;
-
     public string winMotivation;
 
     public Sprite levelImage;

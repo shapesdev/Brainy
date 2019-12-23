@@ -15,8 +15,8 @@ MonoBehaviour:
   subjectName: Geography
   levelNumber: 9
   levelName: Globalization
-  loseMotivation: 
-  winMotivation: 
+  winMotivation: "\u201CWinning takes precedence over all. There\u2019s no gray area.
+    No almosts.\u201D - Kobe Bryant"
   levelImage: {fileID: 21300000, guid: 34857ef8d28ad564bbe1a269a05baa9a, type: 3}
   questions:
   - {fileID: 11400000, guid: bb60bbddff843ee40977ed7bba3b5826, type: 2}

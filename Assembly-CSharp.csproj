@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D36FA1E1-36BB-708E-D06F-E092F8F8B1EA}</ProjectGuid>
+    <ProjectGuid>{BC55A2FE-8E88-2F4D-614F-D92EDC14AE23}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,9 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\HONETi\mobile_cartoon_GUI\Scripts\switch_scenes.cs" />
-     <Compile Include="Assets\IPurchaseManager.cs" />
-     <Compile Include="Assets\OnPurchaseSuccesful.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
@@ -65,7 +62,6 @@
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
      <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
-     <Compile Include="Assets\PictureAnswersDisplayer.cs" />
      <Compile Include="Assets\PlayFabSdk\Admin\PlayFabAdminAPI.cs" />
      <Compile Include="Assets\PlayFabSdk\Admin\PlayFabAdminInstanceAPI.cs" />
      <Compile Include="Assets\PlayFabSdk\Admin\PlayFabAdminModels.cs" />
@@ -160,7 +156,6 @@
      <Compile Include="Assets\PlayFabSdk\Shared\Public\PluginContract.cs" />
      <Compile Include="Assets\PlayFabSdk\Shared\Public\PluginContractKey.cs" />
      <Compile Include="Assets\PlayFabSdk\Shared\Public\PluginManager.cs" />
-     <Compile Include="Assets\PurchaseManager.cs" />
      <Compile Include="Assets\Scripts\Menu\EventArgs\ChangeNameEventArgs.cs" />
      <Compile Include="Assets\Scripts\Menu\EventArgs\LeaderboardClickEventArgs.cs" />
      <Compile Include="Assets\Scripts\Menu\EventArgs\LeaderboardCloseEventArgs.cs" />
@@ -179,6 +174,7 @@
      <Compile Include="Assets\Scripts\Menu\Leaderboard\LeaderboardModel.cs" />
      <Compile Include="Assets\Scripts\Menu\Leaderboard\LeaderboardTemplate.cs" />
      <Compile Include="Assets\Scripts\Menu\Leaderboard\LeaderboardView.cs" />
+     <Compile Include="Assets\Scripts\Menu\Level\AchievementCloser.cs" />
      <Compile Include="Assets\Scripts\Menu\Level\ILevelSelectionView.cs" />
      <Compile Include="Assets\Scripts\Menu\Level\LevelConfig.cs" />
      <Compile Include="Assets\Scripts\Menu\Level\LevelDataLoader.cs" />
@@ -202,8 +198,11 @@
      <Compile Include="Assets\Scripts\Menu\PlayFab\PlayFabModel.cs" />
      <Compile Include="Assets\Scripts\Menu\PlayFab\PlayFabView.cs" />
      <Compile Include="Assets\Scripts\Menu\PlayFab\RandomNameGenerator.cs" />
+     <Compile Include="Assets\Scripts\Menu\Shop\IPurchaseManager.cs" />
      <Compile Include="Assets\Scripts\Menu\Shop\IShopView.cs" />
      <Compile Include="Assets\Scripts\Menu\Shop\OnOpenedShopEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Menu\Shop\OnPurchaseSuccesful.cs" />
+     <Compile Include="Assets\Scripts\Menu\Shop\PurchaseManager.cs" />
      <Compile Include="Assets\Scripts\Menu\Shop\ShopController.cs" />
      <Compile Include="Assets\Scripts\Menu\Shop\ShopFactory.cs" />
      <Compile Include="Assets\Scripts\Menu\Shop\ShopModel.cs" />
@@ -216,14 +215,15 @@
      <Compile Include="Assets\Scripts\SinglePlayer\EventArgs\OnRoundFinishEventArgs.cs" />
      <Compile Include="Assets\Scripts\SinglePlayer\Game\GameController.cs" />
      <Compile Include="Assets\Scripts\SinglePlayer\Game\GameFactory.cs" />
+     <Compile Include="Assets\Scripts\SinglePlayer\Game\GameFactoryManager.cs" />
      <Compile Include="Assets\Scripts\SinglePlayer\Game\GameModel.cs" />
      <Compile Include="Assets\Scripts\SinglePlayer\Game\GameView.cs" />
      <Compile Include="Assets\Scripts\SinglePlayer\Game\GeneralQuestionDisplayer.cs" />
      <Compile Include="Assets\Scripts\SinglePlayer\Game\IQuestionDisplayer.cs" />
+     <Compile Include="Assets\Scripts\SinglePlayer\Game\PictureAnswersDisplayer.cs" />
      <Compile Include="Assets\Scripts\SinglePlayer\Game\PictureQuestionDisplayer.cs" />
      <Compile Include="Assets\Scripts\SinglePlayer\Game\QuestionDisplayer.cs" />
      <Compile Include="Assets\Scripts\SinglePlayer\Game\Shuffler.cs" />
-     <Compile Include="Assets\Scripts\SinglePlayer\GameFactoryManager.cs" />
      <Compile Include="Assets\Scripts\SO\Achievement.cs" />
      <Compile Include="Assets\Scripts\SO\BiologyLevel.cs" />
      <Compile Include="Assets\Scripts\SO\ChemistryLevel.cs" />
@@ -240,6 +240,7 @@
      <Compile Include="Assets\Scripts\SO\ShopItem.cs" />
      <Compile Include="Assets\Scripts\SO\SkinItem.cs" />
      <Compile Include="Assets\Scripts\SO\SoundEffect.cs" />
+     <Compile Include="Assets\Sprites\HONETi\mobile_cartoon_GUI\Scripts\switch_scenes.cs" />
      <None Include="Assets\PlayFabSdk\link.xml" />
      <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
      <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />
@@ -387,7 +388,7 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
  </Reference>
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -417,37 +418,37 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
  <Reference Include="UDP">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Plugins/UDP/UDP.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Plugins/UDP/UDP.dll</HintPath>
  </Reference>
  <Reference Include="Editor">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
  </Reference>
  <Reference Include="Purchasing.Common">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Plugins/UnityPurchasing/Bin/Purchasing.Common.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Plugins/UnityPurchasing/Bin/Purchasing.Common.dll</HintPath>
  </Reference>
  <Reference Include="Stores">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
  </Reference>
  <Reference Include="Apple">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
  </Reference>
  <Reference Include="FacebookStore">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Plugins/UnityPurchasing/Bin/Facebook/FacebookStore.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Plugins/UnityPurchasing/Bin/Facebook/FacebookStore.dll</HintPath>
  </Reference>
  <Reference Include="Security">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Plugins/UnityPurchasing/Bin/Security/live/Security.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Plugins/UnityPurchasing/Bin/Security/live/Security.dll</HintPath>
  </Reference>
  <Reference Include="Tizen">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll</HintPath>
  </Reference>
  <Reference Include="winrt">
- <HintPath>C:/Unity Projects/Multiplayer Quiz Template/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
+ <HintPath>C:/Users/Donc3 Kebabas/Documents/GitHub/Brainy/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Users/Donc3 Kebabas/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
@@ -461,29 +462,29 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{4D5C83BA-ADFD-7166-08D1-368FBFE52DC6}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{D7B10267-0A1E-DF89-061A-E2053C3DACCD}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
-      <Project>{699F19AB-5AD7-C1C0-8A5A-DC11D05F0AC7}</Project>      <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>    </ProjectReference>
+      <Project>{A54294E9-CDCE-8236-75B6-023E9CDDB70E}</Project>      <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>    </ProjectReference>
     <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
-      <Project>{317E44DA-DEAD-DD50-3E29-401B21CCE443}</Project>      <Name>PunDemos.DemoHubEditor</Name>    </ProjectReference>
+      <Project>{39898EF3-5104-0E01-1A38-6AA7286CEE90}</Project>      <Name>PunDemos.DemoHubEditor</Name>    </ProjectReference>
     <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
-      <Project>{1DCB6165-4FE6-668E-F5C7-E7C2B3E2F82B}</Project>      <Name>PunDemos.DemoSlotcarEditor</Name>    </ProjectReference>
+      <Project>{3C1A41A2-2D8F-7F57-8AC8-5C2B87C6D5FF}</Project>      <Name>PunDemos.DemoSlotcarEditor</Name>    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
-      <Project>{142F51F6-0369-CEFC-EAC5-3EE260997273}</Project>      <Name>PhotonUnityNetworking.Demos</Name>    </ProjectReference>
+      <Project>{7616EDAB-85FF-5532-E813-012AB371AC84}</Project>      <Name>PhotonUnityNetworking.Demos</Name>    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{979EB050-5B20-7C24-3EB0-D3E4B21A5403}</Project>      <Name>PhotonUnityNetworking.Utilities</Name>    </ProjectReference>
+      <Project>{EE535A2C-EA28-3CEA-32E6-A733C95F4461}</Project>      <Name>PhotonUnityNetworking.Utilities</Name>    </ProjectReference>
     <ProjectReference Include="PhotonWebSocket.csproj">
-      <Project>{BBD0A68D-90F1-843C-392C-BBBFBE347A2C}</Project>      <Name>PhotonWebSocket</Name>    </ProjectReference>
+      <Project>{CF78AAEF-0396-C98B-B6C2-C0326A713D90}</Project>      <Name>PhotonWebSocket</Name>    </ProjectReference>
     <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{2A5A0612-997B-8B32-96D9-BC5B1F8E5512}</Project>      <Name>PhotonRealtime</Name>    </ProjectReference>
+      <Project>{8D3BB059-41CD-271A-2F34-8616E1387236}</Project>      <Name>PhotonRealtime</Name>    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{270B7E80-EFA4-A134-9805-7F088670F0B7}</Project>      <Name>PhotonUnityNetworking</Name>    </ProjectReference>
+      <Project>{B44A6DCB-F540-6501-814B-0E82AD178063}</Project>      <Name>PhotonUnityNetworking</Name>    </ProjectReference>
     <ProjectReference Include="PhotonChat.csproj">
-      <Project>{F9C22676-71F7-669E-0517-A209D7723F7A}</Project>      <Name>PhotonChat</Name>    </ProjectReference>
+      <Project>{602A478A-A402-A5BE-3BFF-15BE48C5EC5F}</Project>      <Name>PhotonChat</Name>    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
-      <Project>{5F084F16-E6D6-6A49-E4A8-B0A69E285B19}</Project>      <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>    </ProjectReference>
+      <Project>{24D15EC7-3AC5-1926-8846-27E2A1406B42}</Project>      <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
-      <Project>{DE575CC3-6862-C771-3C16-E7AFD8B835B0}</Project>      <Name>PhotonUnityNetworking.Editor</Name>    </ProjectReference>
+      <Project>{0CFA4E51-8D16-38CC-B1ED-5491666EF2CF}</Project>      <Name>PhotonUnityNetworking.Editor</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

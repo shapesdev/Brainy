@@ -15,8 +15,9 @@ MonoBehaviour:
   subjectName: Geography
   levelNumber: 5
   levelName: Inhabitants
-  loseMotivation: 
-  winMotivation: 
+  winMotivation: "\u201CI hated every minute of training, but I said, \u2018Don\u2019t
+    quit. Suffer now and live the rest of your life as a champion.'\u201D - Muhammad
+    Ali"
   levelImage: {fileID: 21300000, guid: af74f2576c0fc9e4d9e189cd5ef046bd, type: 3}
   questions:
   - {fileID: 11400000, guid: f2c8a88e45ed43e4285bde004cc28db0, type: 2}

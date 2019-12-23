@@ -15,8 +15,8 @@ MonoBehaviour:
   subjectName: Geography
   levelNumber: 8
   levelName: Agriculture
-  loseMotivation: 
-  winMotivation: 
+  winMotivation: "\u201CThere are more important things in life than winning or losing
+    a game.\u201D - Lionel Messi"
   levelImage: {fileID: 21300000, guid: 34f42a7764a37a44b978e7776a0e7bc0, type: 3}
   questions:
   - {fileID: 11400000, guid: c2bdec5c06e69364fac35590c10b43c5, type: 2}

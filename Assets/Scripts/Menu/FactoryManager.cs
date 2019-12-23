@@ -71,7 +71,7 @@ public class FactoryManager : MonoBehaviour {
     private void InitializePlayer()
     {
         PlayerFactory playerFactory = new PlayerFactory();
-        playerFactory.Load(playerView);
+        playerFactory.Load(playerView, levelSelectionView);
     }
 
     private void InitializeShop()

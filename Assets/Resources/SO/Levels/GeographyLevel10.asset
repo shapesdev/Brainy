@@ -15,8 +15,8 @@ MonoBehaviour:
   subjectName: Geography
   levelNumber: 10
   levelName: Records
-  loseMotivation: 
-  winMotivation: 
+  winMotivation: "\u201CYou can\u2019t win unless you learn how to lose.\u201D - Kareem
+    Abdul-Jabbar"
   levelImage: {fileID: 21300000, guid: 7dc595a262c326f419ea225e37749d71, type: 3}
   questions:
   - {fileID: 11400000, guid: 7e7bd4109b33ef04a955a6b1f276424e, type: 2}

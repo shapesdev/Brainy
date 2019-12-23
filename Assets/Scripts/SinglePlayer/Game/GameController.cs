@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿using PlayFab;
+using PlayFab.ClientModels;
+using PlayFab.Json;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -73,6 +76,7 @@ public class GameController {
                 view.ShowLosePanel2(LevelConfig.instance.levels[LevelConfig.instance.currentlevel].levelType.minScore);
             }
             UpdateLevelValues(LevelConfig.instance.model);
+            StartCloudUpdatePlayerStats();
         }
     }
 
@@ -98,5 +102,31 @@ public class GameController {
         }
         string jsonString = JsonUtility.ToJson(model);
         PlayerPrefs.SetString("Levels", jsonString);
+    }
+
+    public void StartCloudUpdatePlayerStats()
+    {
+        PlayFabClientAPI.ExecuteCloudScript(new ExecuteCloudScriptRequest()
+        {
+            FunctionName = "UpdatePlayerIq",
+            FunctionParameter = new
+            {
+                high = PlayerPrefs.GetInt("IqPoints")
+            },
+            GeneratePlayStreamEvent = true,
+        }, OnCloudUpdateStats, OnErrorShared);
+    }
+
+    private void OnCloudUpdateStats(ExecuteCloudScriptResult result)
+    {
+        JsonObject jsonResult = (JsonObject)result.FunctionResult;
+        object messageValue;
+        jsonResult.TryGetValue("messageValue", out messageValue);
+    }
+
+    private void OnErrorShared(PlayFabError error)
+    {
+        Debug.Log(error.GenerateErrorReport());
+        Debug.Log("COULDNT UPDATE CLOUD");
     }
 }

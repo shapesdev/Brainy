@@ -23,7 +23,7 @@ public class LevelSelectionView : MonoBehaviour, ILevelSelectionView {
 
     public void TurnOnPanel()
     {
-        if(this.gameObject.activeInHierarchy == false)
+        if (this.gameObject.activeInHierarchy == false)
         {
             this.gameObject.SetActive(true);
         }
@@ -31,7 +31,7 @@ public class LevelSelectionView : MonoBehaviour, ILevelSelectionView {
 
     public void TurnOffPanel()
     {
-        if(this.gameObject.activeInHierarchy == true)
+        if (this.gameObject.activeInHierarchy == true)
         {
             this.gameObject.SetActive(false);
         }
@@ -41,7 +41,7 @@ public class LevelSelectionView : MonoBehaviour, ILevelSelectionView {
     {
         List<string> options = new List<string>();
 
-        foreach(var option in categories)
+        foreach (var option in categories)
         {
             var name = option.Value.Name.Substring(0, option.Value.Name.Length - 5);
             options.Add(name);
@@ -55,11 +55,16 @@ public class LevelSelectionView : MonoBehaviour, ILevelSelectionView {
 
     public void DropdownValueChanged(Dropdown change)
     {
-        if(activateEvent == true)
+        if (activateEvent == true)
         {
             var eventArgs = new OnValueUpdateEventArgs(change.value);
             OnValueUpdate(this, eventArgs);
         }
+    }
+
+    public void UpdateIqPoints()
+    {
+        iqPointsText.text = PlayerPrefs.GetInt("IqPoints").ToString();
     }
 
     public void DisplayLevelSelections(List<LevelModel> levels)

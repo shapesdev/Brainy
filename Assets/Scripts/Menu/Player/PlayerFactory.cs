@@ -8,10 +8,10 @@ public class PlayerFactory {
     public PlayerModel model { get; private set; }
     public PlayerView view { get; private set; }
 
-    public void Load(PlayerView view)
+    public void Load(PlayerView view, LevelSelectionView views)
     {
         this.model = new PlayerModel();
         this.view = view;
-        this.controller = new PlayerController(model, view);
+        this.controller = new PlayerController(model, view, views);
     }
 }

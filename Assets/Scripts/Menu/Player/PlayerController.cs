@@ -8,12 +8,14 @@ public class PlayerController {
 
     public PlayerModel model;
     public PlayerView view;
+    private LevelSelectionView levelView;
     RandomNameGenerator nameGenerator;
 
-    public PlayerController(PlayerModel model, PlayerView view)
+    public PlayerController(PlayerModel model, PlayerView view, LevelSelectionView levelView)
     {
         this.model = model;
         this.view = view;
+        this.levelView = levelView;
 
         CheckIfUserNameExists();
         GetPlayerVC();
@@ -56,16 +58,8 @@ public class PlayerController {
             }
             else
             {
-                if(PlayerPrefs.GetInt("IqPoints") == 0)
-                {
-                    GetPlayerProfile(result.PlayerProfile.PlayerId);
-                    GetStats();
-                }
-                else
-                {
-                    GetPlayerProfile(result.PlayerProfile.PlayerId);
-                    StartCloudUpdatePlayerStats();
-                }
+                GetPlayerProfile(result.PlayerProfile.PlayerId);
+                GetStats();
             }
         },
         error => { Debug.LogError(error.GenerateErrorReport()); });
@@ -148,7 +142,10 @@ public class PlayerController {
             switch (eachStat.StatisticName)
             {
                 case "HighScore":
-                    PlayerPrefs.SetInt("IqPoints", eachStat.Value);
+                    if(eachStat.Value > PlayerPrefs.GetInt("IqPoints"))
+                    {
+                        PlayerPrefs.SetInt("IqPoints", eachStat.Value);
+                    }
                     break;
                 case "TotalGames":
                     model.SetTotalGames(eachStat.Value);
@@ -161,6 +158,7 @@ public class PlayerController {
                     break;
             }
         }
+        levelView.UpdateIqPoints();
     }
 
     public void StartCloudUpdatePlayerStats()

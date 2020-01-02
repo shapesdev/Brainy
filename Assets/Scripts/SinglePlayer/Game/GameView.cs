@@ -13,6 +13,7 @@ public class GameView : MonoBehaviour {
 
     public Text winText;
     public Text loseText;
+    public Text hintAmount;
 
     public SoundEffect[] soundEffects;
     public AudioSource audioSource;
@@ -186,6 +187,7 @@ public class GameView : MonoBehaviour {
 
     public void OpenHintPanel()
     {
+        hintAmount.text = "Hint Points: " + PlayerPrefs.GetInt("HP").ToString();
         hintPanel.SetActive(true);
     }
 
@@ -211,6 +213,40 @@ public class GameView : MonoBehaviour {
         hintPanel.SetActive(false);
     }
 
+    public void RemoveVerticalOptions()
+    {
+        if (pictureObject.activeInHierarchy)
+        {
+            pictureObject.GetComponent<PictureQuestionDisplayer>().RemoveVertical();
+        }
+        else if (generalObject.activeInHierarchy)
+        {
+            generalObject.GetComponent<GeneralQuestionDisplayer>().RemoveVertical();
+        }
+        else if (pictureAnswersObject.activeInHierarchy)
+        {
+            pictureAnswersObject.GetComponent<PictureAnswersDisplayer>().RemoveVertical();
+        }
+        hintPanel.SetActive(false);
+    }
+
+    public void RemoveHorizontalOptions()
+    {
+        if (pictureObject.activeInHierarchy)
+        {
+            pictureObject.GetComponent<PictureQuestionDisplayer>().RemoveHorizontal();
+        }
+        else if (generalObject.activeInHierarchy)
+        {
+            generalObject.GetComponent<GeneralQuestionDisplayer>().RemoveHorizontal();
+        }
+        else if (pictureAnswersObject.activeInHierarchy)
+        {
+            pictureAnswersObject.GetComponent<PictureAnswersDisplayer>().RemoveHorizontal();
+        }
+        hintPanel.SetActive(false);
+    }
+
     public void GoToMainMenu()
     {
         SceneManager.LoadScene(0);
@@ -230,7 +266,6 @@ public class GameView : MonoBehaviour {
         }
         else
         {
-            //Debug.Log("All levels in category finished!");
             GoToMainMenu();
         }
     }

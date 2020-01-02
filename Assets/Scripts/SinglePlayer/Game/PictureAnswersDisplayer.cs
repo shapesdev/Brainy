@@ -14,6 +14,8 @@ public class PictureAnswersDisplayer : MonoBehaviour {
     public Image[] optionImages;
     private Button pickedButton;
 
+    public GameObject boostError;
+
     public GameController gameController;
 
     void OnEnable()
@@ -128,10 +130,98 @@ public class PictureAnswersDisplayer : MonoBehaviour {
                     var buttonColor = optionButtons[i].colors;
                     buttonColor.disabledColor = new Color32(200, 200, 200, 200);
                     optionButtons[i].colors = buttonColor;
+                    PlayerPrefs.GetInt("HP", PlayerPrefs.GetInt("HP") - 10);
                     break;
                 }
             }
         }
+    }
+
+    public void RemoveVertical()
+    {
+        int amount = 0;
+
+        foreach (var btn in optionButtons)
+        {
+            if (btn.interactable == false)
+            {
+                amount++;
+            }
+        }
+
+        if (amount < 1)
+        {
+            if (optionImages[0].sprite == correctSprite || optionImages[3].sprite == correctSprite)
+            {
+                var buttonColor = optionButtons[0].colors;
+                buttonColor.disabledColor = new Color32(200, 200, 200, 200);
+                optionButtons[1].colors = buttonColor;
+                optionButtons[2].colors = buttonColor;
+                optionButtons[1].interactable = false;
+                optionButtons[2].interactable = false;
+            }
+            else
+            {
+                var buttonColor = optionButtons[0].colors;
+                buttonColor.disabledColor = new Color32(200, 200, 200, 200);
+                optionButtons[0].colors = buttonColor;
+                optionButtons[3].colors = buttonColor;
+                optionButtons[0].interactable = false;
+                optionButtons[3].interactable = false;
+            }
+            PlayerPrefs.GetInt("HP", PlayerPrefs.GetInt("HP") - 15);
+        }
+        else
+        {
+            boostError.SetActive(true);
+            Invoke("TurnOffError", 2f);
+        }
+    }
+
+    public void RemoveHorizontal()
+    {
+        int amount = 0;
+
+        foreach (var btn in optionButtons)
+        {
+            if (btn.interactable == false)
+            {
+                amount++;
+            }
+        }
+
+        if (amount < 1)
+        {
+            if (optionImages[0].sprite == correctSprite || optionImages[1].sprite == correctSprite)
+            {
+                var buttonColor = optionButtons[0].colors;
+                buttonColor.disabledColor = new Color32(200, 200, 200, 200);
+                optionButtons[2].colors = buttonColor;
+                optionButtons[3].colors = buttonColor;
+                optionButtons[2].interactable = false;
+                optionButtons[3].interactable = false;
+            }
+            else
+            {
+                var buttonColor = optionButtons[0].colors;
+                buttonColor.disabledColor = new Color32(200, 200, 200, 200);
+                optionButtons[0].colors = buttonColor;
+                optionButtons[1].colors = buttonColor;
+                optionButtons[0].interactable = false;
+                optionButtons[1].interactable = false;
+            }
+            PlayerPrefs.GetInt("HP", PlayerPrefs.GetInt("HP") - 15);
+        }
+        else
+        {
+            boostError.SetActive(true);
+            Invoke("TurnOffError", 2f);
+        }
+    }
+
+    public void TurnOffError()
+    {
+        boostError.SetActive(false);
     }
 
     private void NextRound()

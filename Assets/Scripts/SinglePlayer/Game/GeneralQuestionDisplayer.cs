@@ -30,4 +30,82 @@ public class GeneralQuestionDisplayer : QuestionDisplayer {
 
         TurnOnButtonInteract();
     }
+
+    public void RemoveVertical()
+    {
+        int amount = 0;
+
+        foreach (var btn in optionButtons)
+        {
+            if (btn.interactable == false)
+            {
+                amount++;
+            }
+        }
+
+        if(amount < 1)
+        {
+            if (optionsText[0].text == correctAnswer || optionsText[3].text == correctAnswer)
+            {
+                optionButtons[1].interactable = false;
+                optionButtons[2].interactable = false;
+            }
+            else
+            {
+                optionButtons[0].interactable = false;
+                optionButtons[3].interactable = false;
+            }
+            PlayerPrefs.GetInt("HP", PlayerPrefs.GetInt("HP") - 15);
+        }
+        else if(amount == 1)
+        {
+            for(int i = 0; i < optionsText.Length; i++)
+            {
+                if(optionsText[i].text != correctAnswer)
+                {
+                    optionButtons[i].interactable = false;
+                }
+            }
+            PlayerPrefs.GetInt("HP", PlayerPrefs.GetInt("HP") - 15);
+        }
+    }
+
+    public void RemoveHorizontal()
+    {
+        int amount = 0;
+
+        foreach (var btn in optionButtons)
+        {
+            if (btn.interactable == false)
+            {
+                amount++;
+            }
+        }
+
+        if(amount < 1)
+        {
+            if (optionsText[0].text == correctAnswer || optionsText[1].text == correctAnswer)
+            {
+                optionButtons[2].interactable = false;
+                optionButtons[3].interactable = false;
+            }
+            else
+            {
+                optionButtons[0].interactable = false;
+                optionButtons[1].interactable = false;
+            }
+            PlayerPrefs.GetInt("HP", PlayerPrefs.GetInt("HP") - 15);
+        }
+        else if (amount == 1)
+        {
+            for (int i = 0; i < optionsText.Length; i++)
+            {
+                if (optionsText[i].text != correctAnswer)
+                {
+                    optionButtons[i].interactable = false;
+                }
+            }
+            PlayerPrefs.GetInt("HP", PlayerPrefs.GetInt("HP") - 15);
+        }
+    }
 }

@@ -103,6 +103,7 @@ public class QuestionDisplayer : MonoBehaviour {
                 if (optionsText[i].text != correctAnswer && optionButtons[i].interactable == true)
                 {
                     optionButtons[i].interactable = false;
+                    PlayerPrefs.GetInt("HP", PlayerPrefs.GetInt("HP") - 10);
                     break;
                 }
             }

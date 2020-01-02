@@ -8,6 +8,7 @@ public class PictureQuestionDisplayer : QuestionDisplayer {
     List<string> shuffledList = new List<string>();
     public Image picture;
     public Image biggerPicture;
+    public GameObject boostError;
 
     void OnEnable()
     {
@@ -44,5 +45,76 @@ public class PictureQuestionDisplayer : QuestionDisplayer {
         correctAnswer = answer;
 
         TurnOnButtonInteract();
+    }
+
+    public void RemoveVertical()
+    {
+        int amount = 0;
+
+        foreach(var btn in optionButtons)
+        {
+            if(btn.interactable == false)
+            {
+                amount++;
+            }
+        }
+
+        if(amount < 1)
+        {
+            if (optionsText[0].text == correctAnswer || optionsText[3].text == correctAnswer)
+            {
+                optionButtons[1].interactable = false;
+                optionButtons[2].interactable = false;
+            }
+            else
+            {
+                optionButtons[0].interactable = false;
+                optionButtons[3].interactable = false;
+            }
+            PlayerPrefs.GetInt("HP", PlayerPrefs.GetInt("HP") - 15);
+        }
+        else
+        {
+            boostError.SetActive(true);
+            Invoke("TurnOffError", 2f);
+        }
+    }
+
+    public void RemoveHorizontal()
+    {
+        int amount = 0;
+
+        foreach (var btn in optionButtons)
+        {
+            if (btn.interactable == false)
+            {
+                amount++;
+            }
+        }
+
+        if(amount < 1)
+        {
+            if (optionsText[0].text == correctAnswer || optionsText[1].text == correctAnswer)
+            {
+                optionButtons[2].interactable = false;
+                optionButtons[3].interactable = false;
+            }
+            else
+            {
+                optionButtons[0].interactable = false;
+                optionButtons[1].interactable = false;
+            }
+            PlayerPrefs.GetInt("HP", PlayerPrefs.GetInt("HP") - 15);
+        }
+        else
+        {
+            boostError.SetActive(true);
+            Invoke("TurnOffError", 2f);
+        }
+    }
+
+    public void TurnOffError()
+    {
+        boostError.SetActive(false);
     }
 }

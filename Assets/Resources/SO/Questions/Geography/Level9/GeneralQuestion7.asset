@@ -11,12 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7dc9c884b3c3b44b0459b2d3b4bdb4, type: 3}
   m_Name: GeneralQuestion7
   m_EditorClassIdentifier: 
-  question: What is the name of the tourism when tourists travel to the more remote
-    parts of our planet?
+  question: What kind of tourism is it when tourists travel to the more remote parts
+    of the planet?
   correctAnswer: Expeditionary tourism
   options:
   - Expeditionary tourism
   - Sightseeing tours
   - Business tourism
   - Sports tourism
+  imageOptions: []
   picture: {fileID: 0}

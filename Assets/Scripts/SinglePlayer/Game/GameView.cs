@@ -172,7 +172,7 @@ public class GameView : MonoBehaviour {
         audioSource.volume = soundEffects[2].volume;
         audioSource.Play();
         losePanel.SetActive(true);
-        loseText.text = "You just gonna take this massive L? Get " + score + " points to unlock next level!";
+        loseText.text = "You just gonna take this massive L? Answer " + score / 10 + " questions to unlock next level!";
     }
 
     public void ShowWinPanel(int score)

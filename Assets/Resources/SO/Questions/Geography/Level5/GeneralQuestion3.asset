@@ -11,8 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7dc9c884b3c3b44b0459b2d3b4bdb4, type: 3}
   m_Name: GeneralQuestion3
   m_EditorClassIdentifier: 
-  question: Which of these statements is wrong about small birth rate in economically
-    strong countries?
+  question: Which of these statements is wrong about economically strong countries?
   correctAnswer: 10-12 years old children start working
   options:
   - 10-12 years old children start working

@@ -11,12 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7dc9c884b3c3b44b0459b2d3b4bdb4, type: 3}
   m_Name: GeneralQuestion8
   m_EditorClassIdentifier: 
-  question: Which country has forbidden to divide their citizens by their ethical
-    and racial groups in statistics?
+  question: Which country has forbidden dividing their citizens by their ethical and
+    racial groups in statistics?
   correctAnswer: France
   options:
   - France
   - Portugal
   - Italy
   - England
+  imageOptions: []
   picture: {fileID: 0}

@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7dc9c884b3c3b44b0459b2d3b4bdb4, type: 3}
   m_Name: GeneralQuestion3
   m_EditorClassIdentifier: 
-  question: In this country the sun shines 320-330 days a year, it rains only a few
-    days and has the largest greenhouse complex, what is the country?
+  question: Country with 320 sunny days a year, rains only a few days and has the
+    largest greenhouse complex, what is the country?
   correctAnswer: Spain
   options:
   - Netherlands

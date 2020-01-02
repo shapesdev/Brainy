@@ -13,10 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: What is Hydroponics?
   correctAnswer: A method of growing plants without soil instead using mineral nutrient
-    solutions in water solvent
   options:
-  - A method of growing plants without soil instead using mineral nutrient solutions
-    in water solvent
+  - A method of growing plants without soil instead using mineral nutrient
   - 'Plant cultivation in moist air '
   - Artificial water supply for irrigated soil
   - A way of cultivating agriculture to do the least damage to soil

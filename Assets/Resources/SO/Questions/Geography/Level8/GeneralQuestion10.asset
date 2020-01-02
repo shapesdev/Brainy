@@ -11,11 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7dc9c884b3c3b44b0459b2d3b4bdb4, type: 3}
   m_Name: GeneralQuestion10
   m_EditorClassIdentifier: 
-  question: Which country has the highest number of starving people?
+  question: Which country is the hungriest?
   correctAnswer: Central African Republic
   options:
   - Central African Republic
   - Yemen
   - Chad
   - Madagascar
+  imageOptions: []
   picture: {fileID: 0}

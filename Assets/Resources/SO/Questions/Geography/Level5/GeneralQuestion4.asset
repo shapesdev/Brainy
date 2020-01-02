@@ -11,12 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7dc9c884b3c3b44b0459b2d3b4bdb4, type: 3}
   m_Name: GeneralQuestion4
   m_EditorClassIdentifier: 
-  question: Which of these statements is wrong about high birth rate in economically
-    weak countries?
+  question: Which of these statements is wrong about economically weak countries?
   correctAnswer: Depopulation
   options:
   - Appearance of new diseases
   - Increasing number of inhabitants
   - Depopulation
   - Demographic aging
+  imageOptions: []
   picture: {fileID: 0}

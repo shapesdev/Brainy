@@ -14,21 +14,22 @@ MonoBehaviour:
   id: 1
   subjectName: Geography
   levelNumber: 3
-  levelName: Locations
-  loseMotivation: 
-  winMotivation: '"The determination to win is the better part of winning." - Daisaku
-    Ikeda'
-  levelImage: {fileID: 21300000, guid: 98676f4ea9676d0489c826c0ca91ce28, type: 3}
+  levelName: Politics
+  winMotivation: "\u201CI\u2019ve missed more than 9000 shots in my career. I\u2019ve
+    lost almost 300 games. 26 times, I\u2019ve been trusted to take the game winning
+    shot and missed. I\u2019ve failed over and over and over again in my life. And
+    that is why I succeed.\u201D - Michael Jordan"
+  levelImage: {fileID: 21300000, guid: 8f454b646c8c0dc4b8cb45adfa27e97b, type: 3}
   questions:
-  - {fileID: 11400000, guid: 2b64083c706611d419b6601c5b4846fc, type: 2}
-  - {fileID: 11400000, guid: 305e6912bdba30e40a6a4fe6b383d103, type: 2}
-  - {fileID: 11400000, guid: d81efe0887c87a847960d378e0a0f3fa, type: 2}
-  - {fileID: 11400000, guid: 359679c96f0b1e94380da6cf9883cda1, type: 2}
-  - {fileID: 11400000, guid: c78805a6ac27f4447a64bd3e04bdf3dd, type: 2}
-  - {fileID: 11400000, guid: 9839f4d2c610bf649b40a9cd0dce58fb, type: 2}
-  - {fileID: 11400000, guid: 1360187e08fbc5a45919f9ee29f941bd, type: 2}
-  - {fileID: 11400000, guid: c557f877d0311ad4199a13b2544da2b8, type: 2}
-  - {fileID: 11400000, guid: 272c8b5ac1a58d140bfea9cc3e532365, type: 2}
-  - {fileID: 11400000, guid: 50723e79b79727540b66f8e2c3d9b2ae, type: 2}
+  - {fileID: 11400000, guid: 387570df84395d640ad85a200a430998, type: 2}
+  - {fileID: 11400000, guid: e075f9cd04c94c747973847ad09e0240, type: 2}
+  - {fileID: 11400000, guid: e0b53d6f59802a6428147cb3ec2d1976, type: 2}
+  - {fileID: 11400000, guid: 98da9bc2283ea3f4a9f535bbc85044f8, type: 2}
+  - {fileID: 11400000, guid: 8975aa5b8018cbf43862878575cc2a54, type: 2}
+  - {fileID: 11400000, guid: c50581f48d10feb42a6d1be996e3ff12, type: 2}
+  - {fileID: 11400000, guid: e2e7288ac3a702b45b8fc02e8cc1a7c3, type: 2}
+  - {fileID: 11400000, guid: 912f16231e14aec49ab0c73436c44677, type: 2}
+  - {fileID: 11400000, guid: 18e36035412ea6d4784ba587871e88d0, type: 2}
+  - {fileID: 11400000, guid: d65165b0473aff542ac5bd3f5688be98, type: 2}
   maxScore: 100
   minScore: 30

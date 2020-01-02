@@ -11,12 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7dc9c884b3c3b44b0459b2d3b4bdb4, type: 3}
   m_Name: GeneralQuestion7
   m_EditorClassIdentifier: 
-  question: What type of migration is when people go abroad to earn money and later
-    return to their home country?
+  question: What type of migration is to go abroad and later return to the home country
+    after earning money?
   correctAnswer: Temporary migration
   options:
   - Temporary migration
   - Seasonal migration
   - Permanent migration
   - Daily migration
+  imageOptions: []
   picture: {fileID: 0}

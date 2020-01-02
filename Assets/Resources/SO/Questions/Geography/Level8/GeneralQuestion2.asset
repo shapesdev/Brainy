@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: GeneralQuestion2
   m_EditorClassIdentifier: 
   question: How is the person called who is a member of a community of people without
-    fixed habitation who regularly move to and from the same ares?
+    fixed habitation?
   correctAnswer: Nomad
   options:
   - Nomad

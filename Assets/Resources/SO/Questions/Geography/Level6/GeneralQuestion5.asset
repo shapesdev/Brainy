@@ -11,12 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7dc9c884b3c3b44b0459b2d3b4bdb4, type: 3}
   m_Name: GeneralQuestion5
   m_EditorClassIdentifier: 
-  question: Which of these statements is wrong about the pushing factors from village
-    to city?
+  question: 'Which of these statements is wrong about the pushing factors from a village
+    to a city? '
   correctAnswer: Too much work
   options:
   - Too much work
   - Many people don't have their own land
   - Hard to get education
   - Homes without electricity or water supply
+  imageOptions: []
   picture: {fileID: 0}

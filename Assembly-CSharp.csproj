@@ -156,6 +156,7 @@
      <Compile Include="Assets\PlayFabSdk\Shared\Public\PluginContract.cs" />
      <Compile Include="Assets\PlayFabSdk\Shared\Public\PluginContractKey.cs" />
      <Compile Include="Assets\PlayFabSdk\Shared\Public\PluginManager.cs" />
+     <Compile Include="Assets\rotator.cs" />
      <Compile Include="Assets\Scripts\BlurControl.cs" />
      <Compile Include="Assets\Scripts\Menu\EventArgs\ChangeNameEventArgs.cs" />
      <Compile Include="Assets\Scripts\Menu\EventArgs\LeaderboardClickEventArgs.cs" />

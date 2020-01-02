@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7dc9c884b3c3b44b0459b2d3b4bdb4, type: 3}
   m_Name: GeneralQuestion10
   m_EditorClassIdentifier: 
-  question: Which of these religions is not a part of the world major religions?
+  question: Which of these religions is not a part of the world's major religions?
   correctAnswer: Spiritism
   options:
   - Spiritism

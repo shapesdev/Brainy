@@ -18,10 +18,17 @@ public class ShopView : MonoBehaviour, IShopView {
     public Text balanceText;
     public Text addedDmdText;
     public GameObject purchaseMadePanel;
+    public GameObject confirmPanel;
+
+    public GameObject loadingPurchase;
+
+    public Image skinDisplay;
 
     int pageNr;
     int lastSkin;
     int selectedSkin;
+
+    int skinToBuy;
 
     public Sprite currentPage;
     public Sprite notCurrentPage;
@@ -44,13 +51,20 @@ public class ShopView : MonoBehaviour, IShopView {
         SwipeDetector.OnSwipe += SwipeDetector_OnSwipe;
     }
 
+    void OnDisable()
+    {
+        SwipeDetector.OnSwipe -= SwipeDetector_OnSwipe;
+    }
+
     public void UpdateBalance()
     {
         balanceText.text = "Your balance: " + PlayerPrefs.GetInt("Dmd");
+        loadingPurchase.SetActive(false);
     }
 
     public void SuccessfulPurchase(int amount)
     {
+        loadingPurchase.SetActive(false);
         addedDmdText.text = "Added " + amount + " diamonds to your balance!";
         purchaseMadePanel.SetActive(true);
         UpdateBalance();
@@ -185,16 +199,31 @@ public class ShopView : MonoBehaviour, IShopView {
 
     public void UnlockSkin(int skinId)
     {
-        if(PlayerPrefs.GetInt("Dmd") >= 100)
+        confirmPanel.SetActive(true);
+        skinDisplay.sprite = skins[skinId].sprite;
+        skinToBuy = skinId;
+    }
+
+    public void BuySkin()
+    {
+        if (PlayerPrefs.GetInt("Dmd") >= 50)
         {
-            var eventArgs = new OnUnlockSkinEventArgs(skinId);
+            loadingPurchase.SetActive(true);
+            confirmPanel.SetActive(false);
+            var eventArgs = new OnUnlockSkinEventArgs(skinToBuy);
             OnUnlock(this, eventArgs);
         }
         else
         {
+            confirmPanel.SetActive(false);
             notificationNotEnoughDiamonds.gameObject.SetActive(true);
             Invoke("CloseNotification", 2f);
         }
+    }
+
+    public void ClosePurchase()
+    {
+        confirmPanel.SetActive(false);
     }
 
     private void CloseNotification()

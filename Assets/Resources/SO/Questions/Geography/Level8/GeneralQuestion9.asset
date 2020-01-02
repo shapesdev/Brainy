@@ -11,12 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7dc9c884b3c3b44b0459b2d3b4bdb4, type: 3}
   m_Name: GeneralQuestion9
   m_EditorClassIdentifier: 
-  question: What is the name of artificial breeding of fish and other aquatic animals
-    in all types of water environments?
+  question: How is an artificial breeding of fish and other aquatic animals in all
+    types of water environments called?
   correctAnswer: Aquaculture
   options:
   - Fish culture
   - Fisculture
   - Aquaculture
   - Mariculture
+  imageOptions: []
   picture: {fileID: 0}

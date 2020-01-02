@@ -11,12 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7dc9c884b3c3b44b0459b2d3b4bdb4, type: 3}
   m_Name: GeneralQuestion9
   m_EditorClassIdentifier: 
-  question: How is the brutal black people discrimination till 1990 in South Africa
-    called?
+  question: What existed in South Africa until 1990s?
   correctAnswer: Apartheid
   options:
   - Apartheid
   - Syncretism
   - Orthodox
   - Blockade
+  imageOptions: []
   picture: {fileID: 0}

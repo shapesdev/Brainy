@@ -47,7 +47,13 @@ public class QuestionDisplayer : MonoBehaviour {
     public void TurnOnButtonInteract()
     {
         foreach (Text txt in optionsText) { txt.color = new Color32(50, 50, 50, 255); }
-        foreach (Button bt in optionButtons) { bt.interactable = true; }
+        foreach (Button bt in optionButtons)
+        {
+            var buttonColor = bt.colors;
+            buttonColor.disabledColor = new Color32(200, 200, 200, 200);
+            bt.colors = buttonColor;
+            bt.interactable = true;
+        }
     }
 
     public void Win()
@@ -76,6 +82,31 @@ public class QuestionDisplayer : MonoBehaviour {
             }
         }
         Invoke("NextRound", 1.5f);
+    }
+
+    public void RemoveOneWrong()
+    {
+        int amount = 0;
+
+        foreach(var btn in optionButtons)
+        {
+            if(btn.interactable == false)
+            {
+                amount++;
+            }
+        }
+
+        if(amount < 3)
+        {
+            for (int i = 0; i < optionButtons.Length; i++)
+            {
+                if (optionsText[i].text != correctAnswer && optionButtons[i].interactable == true)
+                {
+                    optionButtons[i].interactable = false;
+                    break;
+                }
+            }
+        }
     }
 
     public void ButtonClick(Text text)

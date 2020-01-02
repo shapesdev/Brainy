@@ -7,6 +7,7 @@ public class PictureQuestionDisplayer : QuestionDisplayer {
 
     List<string> shuffledList = new List<string>();
     public Image picture;
+    public Image biggerPicture;
 
     void OnEnable()
     {
@@ -18,6 +19,15 @@ public class PictureQuestionDisplayer : QuestionDisplayer {
         gamePanel.SetActive(false);
     }
 
+    public void MaximizePicture()
+    {
+        biggerPicture.transform.parent.gameObject.SetActive(true);
+    }
+
+    public void MinimizePicture()
+    {
+        biggerPicture.transform.parent.gameObject.SetActive(false);
+    }
 
     public void DisplayQuestion(string question, List<string> listas, Sprite sprite, string answer, GameController game)
     {
@@ -30,6 +40,7 @@ public class PictureQuestionDisplayer : QuestionDisplayer {
         }
         this.question.text = question;
         picture.sprite = sprite;
+        biggerPicture.sprite = sprite;
         correctAnswer = answer;
 
         TurnOnButtonInteract();

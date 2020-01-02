@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a0c621bfdda7aa4fba4f22811d8bbb4, type: 3}
+  m_Name: PictureAnswersQuestion7
+  m_EditorClassIdentifier: 
+  question: 
+  correctAnswer: Opel
+  options: []
+  imageOptions:
+  - {fileID: 21300000, guid: 5fd8fc4020ec13c41961225bd502d7b2, type: 3}
+  - {fileID: 21300000, guid: cebe4bfa59df685479dfeac383390f9a, type: 3}
+  - {fileID: 21300000, guid: 38fea9f8231874e409d4196590a40fb2, type: 3}
+  - {fileID: 21300000, guid: a1ba5b7499734c242bfbb883d4b88dc1, type: 3}
+  picture: {fileID: 21300000, guid: 5fd8fc4020ec13c41961225bd502d7b2, type: 3}

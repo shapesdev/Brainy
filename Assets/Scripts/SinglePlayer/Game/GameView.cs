@@ -26,6 +26,7 @@ public class GameView : MonoBehaviour {
     public GameObject pictureObject;
     public GameObject generalObject;
     public GameObject pictureAnswersObject;
+    public GameObject hintPanel;
 
     public Sprite SoundOff;
     public Sprite SoundOn;
@@ -161,7 +162,7 @@ public class GameView : MonoBehaviour {
         audioSource.volume = soundEffects[2].volume;
         audioSource.Play();
         losePanel.SetActive(true);
-        loseText.text = "You just gonna leave with this massive L?";
+        loseText.text = "Already done? We will be waiting for you!";
     }
 
     public void ShowLosePanel2(int score)
@@ -170,7 +171,7 @@ public class GameView : MonoBehaviour {
         audioSource.volume = soundEffects[2].volume;
         audioSource.Play();
         losePanel.SetActive(true);
-        loseText.text = "Get a minimum of: " + score + " points to unlock next level!";
+        loseText.text = "You just gonna take this massive L? Get " + score + " points to unlock next level!";
     }
 
     public void ShowWinPanel(int score)
@@ -181,6 +182,33 @@ public class GameView : MonoBehaviour {
         winPanel.SetActive(true);
         winIqGained.text = "IQ Points Gained: " + score;
         winText.text = LevelConfig.instance.levels[LevelConfig.instance.currentlevel].levelType.winMotivation;
+    }
+
+    public void OpenHintPanel()
+    {
+        hintPanel.SetActive(true);
+    }
+
+    public void CloseHintPanel()
+    {
+        hintPanel.SetActive(false);
+    }
+
+    public void RemoveOneWrongOption()
+    {
+        if (pictureObject.activeInHierarchy)
+        {
+            pictureObject.GetComponent<PictureQuestionDisplayer>().RemoveOneWrong();
+        }
+        else if (generalObject.activeInHierarchy)
+        {
+            generalObject.GetComponent<GeneralQuestionDisplayer>().RemoveOneWrong();
+        }
+        else if (pictureAnswersObject.activeInHierarchy)
+        {
+            pictureAnswersObject.GetComponent<PictureAnswersDisplayer>().RemoveOneWrong();
+        }
+        hintPanel.SetActive(false);
     }
 
     public void GoToMainMenu()

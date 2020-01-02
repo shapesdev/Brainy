@@ -72,6 +72,9 @@ public class PictureAnswersDisplayer : MonoBehaviour {
         foreach (Button bt in optionButtons)
         { 
             bt.interactable = true;
+            var buttonColor = bt.colors;
+            buttonColor.disabledColor = new Color32(200, 200, 200, 255);
+            bt.colors = buttonColor;
         }
     }
 
@@ -101,6 +104,34 @@ public class PictureAnswersDisplayer : MonoBehaviour {
         TurnOffButtonInteract();
 
         gameController.CheckAnswer(pickedOption.sprite);
+    }
+
+    public void RemoveOneWrong()
+    {
+        int amount = 0;
+
+        foreach (var btn in optionButtons)
+        {
+            if (btn.interactable == false)
+            {
+                amount++;
+            }
+        }
+
+        if (amount < 3)
+        {
+            for (int i = 0; i < optionButtons.Length; i++)
+            {
+                if (optionImages[i].sprite != correctSprite && optionButtons[i].interactable == true)
+                {
+                    optionButtons[i].interactable = false;
+                    var buttonColor = optionButtons[i].colors;
+                    buttonColor.disabledColor = new Color32(200, 200, 200, 200);
+                    optionButtons[i].colors = buttonColor;
+                    break;
+                }
+            }
+        }
     }
 
     private void NextRound()

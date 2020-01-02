@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Name: PictureAnswersQuestion8
   m_EditorClassIdentifier: 
   question: 
-  correctAnswer: Lamborghini
+  correctAnswer: KFC
   options: []
   imageOptions:
-  - {fileID: 21300000, guid: 4d020a8fb1449c04f89c70aa6ab9b564, type: 3}
-  - {fileID: 21300000, guid: d25c9b6eec7d74a4089e21540bb7b2ba, type: 3}
-  - {fileID: 21300000, guid: 97f48aa0e4487de41b0d6c6222b52001, type: 3}
-  - {fileID: 21300000, guid: ee3bae339bec5464b9a6351ba4262282, type: 3}
-  picture: {fileID: 21300000, guid: 4d020a8fb1449c04f89c70aa6ab9b564, type: 3}
+  - {fileID: 21300000, guid: cf616fded8b1c654682c8d7034a98945, type: 3}
+  - {fileID: 21300000, guid: c2132ccf862b60745be7f026d8d9eb33, type: 3}
+  - {fileID: 21300000, guid: 49ddda93529933b45a3960b5d4ca3f57, type: 3}
+  - {fileID: 21300000, guid: 462eab0c3967cb243bbed52bee1ddb59, type: 3}
+  picture: {fileID: 21300000, guid: cf616fded8b1c654682c8d7034a98945, type: 3}

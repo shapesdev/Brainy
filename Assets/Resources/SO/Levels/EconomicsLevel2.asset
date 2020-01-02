@@ -14,20 +14,20 @@ MonoBehaviour:
   id: 3
   subjectName: Economics
   levelNumber: 2
-  levelName: Entrepreneurs
-  winMotivation: '"If you really look closely, most overnight successes took a long
-    time." - Steve Jobs'
+  levelName: Cars
+  winMotivation: "\u201CWinning isn't everything - but wanting to win is.\u201D -
+    Vince Lombardi"
   levelImage: {fileID: 21300000, guid: e101893462243c04d8c3503dd15586f5, type: 3}
   questions:
-  - {fileID: 11400000, guid: c93c3c0e387b51d4793d5ace7bd54264, type: 2}
-  - {fileID: 11400000, guid: 4d706570e455c4946a2c1f64d15b8753, type: 2}
-  - {fileID: 11400000, guid: 66e2a53ce98637b4595ae0532cf9f673, type: 2}
-  - {fileID: 11400000, guid: e3dae612af2cecc4eacaf02a6a7a78e2, type: 2}
-  - {fileID: 11400000, guid: cf35fff29166c7847a01481c0a1dca39, type: 2}
-  - {fileID: 11400000, guid: d3f21bed8b61559409041d948ece8bfd, type: 2}
-  - {fileID: 11400000, guid: 18e5f6f919d9f0e429d9a91b3ecce76a, type: 2}
-  - {fileID: 11400000, guid: 82868ea8073a14d4895ee7da34d90e7b, type: 2}
-  - {fileID: 11400000, guid: 6c3c3f0c729b28e49bc9d860a1189aee, type: 2}
-  - {fileID: 11400000, guid: b2e339de73b2954428fb49af5cfa15f3, type: 2}
+  - {fileID: 11400000, guid: 71bc8e40a12aa9446b6e9f38c0914ffc, type: 2}
+  - {fileID: 11400000, guid: 21ad925e47ce22e448fa1622d3cee5d7, type: 2}
+  - {fileID: 11400000, guid: 4f809e1064235f748b178599e779b1bc, type: 2}
+  - {fileID: 11400000, guid: abe2e2d812ed7184ab7eb310eeb06beb, type: 2}
+  - {fileID: 11400000, guid: 5703b567285ae5b42a6eb1be6a90d439, type: 2}
+  - {fileID: 11400000, guid: d27bec538606bf249a8be2b16995ba29, type: 2}
+  - {fileID: 11400000, guid: 8a2d7b8d17544504d8614129056ecb05, type: 2}
+  - {fileID: 11400000, guid: 174d020f8dfcc4a479724b7448fc591d, type: 2}
+  - {fileID: 11400000, guid: 2dbb7bcbb36ae034c9b643d35c03db1b, type: 2}
+  - {fileID: 11400000, guid: 8d07bc1b9a954ef4e811f67042f00299, type: 2}
   maxScore: 100
   minScore: 30

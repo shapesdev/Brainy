@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Name: PictureAnswersQuestion2
   m_EditorClassIdentifier: 
   question: 
-  correctAnswer: Ubisoft
+  correctAnswer: Electrolux
   options: []
   imageOptions:
-  - {fileID: 21300000, guid: d78c4041bb21b9b4a8fdbe532f287586, type: 3}
+  - {fileID: 21300000, guid: 13b7035339e266f4eb191c7070edf69a, type: 3}
   - {fileID: 21300000, guid: 7a3f4c67fc976754e9cb956424768e25, type: 3}
   - {fileID: 21300000, guid: 33e6810b21bdf1546959bf0d72efeb66, type: 3}
   - {fileID: 21300000, guid: 420a44e499b17c54b8fa3f23f4336872, type: 3}
-  picture: {fileID: 21300000, guid: d78c4041bb21b9b4a8fdbe532f287586, type: 3}
+  picture: {fileID: 21300000, guid: 13b7035339e266f4eb191c7070edf69a, type: 3}

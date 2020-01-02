@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a0c621bfdda7aa4fba4f22811d8bbb4, type: 3}
+  m_Name: PictureAnswersQuestion10
+  m_EditorClassIdentifier: 
+  question: 
+  correctAnswer: Chevrolet
+  options: []
+  imageOptions:
+  - {fileID: 21300000, guid: df36762bb4c70fd42a22b5fcb1abe2e4, type: 3}
+  - {fileID: 21300000, guid: e925d46e706b2aa4389c2497da607d5e, type: 3}
+  - {fileID: 21300000, guid: 7f9ccf002b22a4b43a7bc927ad1befa1, type: 3}
+  - {fileID: 21300000, guid: 04a668bd7f8832c49996889c9d7161f6, type: 3}
+  picture: {fileID: 21300000, guid: 04a668bd7f8832c49996889c9d7161f6, type: 3}

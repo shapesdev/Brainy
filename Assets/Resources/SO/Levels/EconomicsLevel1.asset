@@ -15,8 +15,7 @@ MonoBehaviour:
   subjectName: Economics
   levelNumber: 1
   levelName: Companies
-  winMotivation: "\u201CWinning isn't everything - but wanting to win is.\u201D -
-    Vince Lombardi"
+  winMotivation: "\u201CLosing feels worse than winning feels good.\u201D - Vin Scully"
   levelImage: {fileID: 21300000, guid: e101893462243c04d8c3503dd15586f5, type: 3}
   questions:
   - {fileID: 11400000, guid: bd637222f0c760445af62643a8d8b72e, type: 2}

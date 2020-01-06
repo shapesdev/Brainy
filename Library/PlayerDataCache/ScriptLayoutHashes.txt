@@ -39,7 +39,7 @@ f25fd3873e43d46640b1fd4aa42dc1ab Assembly-CSharp-firstpass.dll:.IAPDemoProductUI
 b0e6f931f4c3163843d44b8ebc9f254a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.LayoutElementMatchSize
 a2205716825ec469d1261a4e1cadddf2 Assembly-CSharp-firstpass.dll:UnityEngine.Purchasing.IAPButton
 4b46cecd59f2a619ae8f720821af6f33 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.PunBasics.PlayerAnimatorManager
-d65db55d4fbef94104c6872c1bee2b77 Assembly-CSharp.dll:.LevelSelectionView
+e24af81912a410b729918b89464786e5 Assembly-CSharp.dll:.LevelSelectionView
 c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.CurrentRoomIsOpenProperty
 6fce0feadba7642a361e87ebfcfe753e PhotonUnityNetworking.dll:Photon.Pun.PhotonAnimatorView
 28b9635dada29d5334975a74e5429ae3 Assembly-CSharp.dll:Photon.Chat.UtilityScripts.TextToggleIsOnTransition
@@ -183,7 +183,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 2a9d553d15b6cd1b42709e3816907960 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.Forms.CreateRoomUiForm
 05524b8f659e7bfe5756d1335fec24ba PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.AutoSyncSceneToggle
 05524b8f659e7bfe5756d1335fec24ba PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.CurrentRoomIsVisibleToggle
-ea1eefb06d61f12deb81a4920f800479 Assembly-CSharp.dll:.GameView
+31a2a5e217cf02e4d83a4ca2973e93b3 Assembly-CSharp.dll:.GameView
 f07f597297eb5ef777da564b116e60c6 Assembly-CSharp.dll:.QuestionDisplayer
 7eee4e9fc1df5c1aae7c0356103363ec PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.SlotRacer.PlayerControl
 c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.BestRegionInPrefsProperty
@@ -286,6 +286,7 @@ c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo
 d82db1b3a214644a5329de4c5e9df417 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.RoomListView
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PlayFabView
 c0b17230605b48ee2c8fdf6ad9d187ec PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.PunBasics.CameraWork
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.rotator
 79b19e013c4ec7408a16bf9ef9c4ee86 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.PunBasics.PlayerManager
 f703af443b66e85d3c5b9abe878d657c PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Asteroids.Asteroid
 544f7ea261b7b21e8c7c81397de348af Assembly-CSharp.dll:.ShopItem
@@ -346,4 +347,3 @@ fb262b2ac14e89c3b1fd066d3ef7cca0 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo
 c3a9e82914d368e0b53a5de37fb3627a PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.CountOfRoomsProperty
 554c18f8fffc91699e4426d05cdb16da PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Asteroids.LobbyTopPanel
 7d864ffcc4e92a94ee3e4ae72421dfac Assembly-CSharp-firstpass.dll:.IAPDemo
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.rotator

@@ -199,9 +199,17 @@ public class ShopView : MonoBehaviour, IShopView {
 
     public void UnlockSkin(int skinId)
     {
-        confirmPanel.SetActive(true);
-        skinDisplay.sprite = skins[skinId].sprite;
-        skinToBuy = skinId;
+        if(PlayerPrefs.GetInt("Dmd") != 0)
+        {
+            confirmPanel.SetActive(true);
+            skinDisplay.sprite = skins[skinId].sprite;
+            skinToBuy = skinId;
+        }
+        else
+        {
+            notificationNotEnoughDiamonds.gameObject.SetActive(true);
+            Invoke("CloseNotification", 1.5f);
+        }
     }
 
     public void BuySkin()

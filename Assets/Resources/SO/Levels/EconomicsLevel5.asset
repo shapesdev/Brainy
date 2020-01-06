@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd69bfc483fc26c4a87002572d9a17c2, type: 3}
+  m_Name: EconomicsLevel5
+  m_EditorClassIdentifier: 
+  id: 3
+  subjectName: Economics
+  levelNumber: 5
+  levelName: Money
+  winMotivation: '"The way to get started is to quit talking and begin doing." - Walt
+    Disney'
+  levelImage: {fileID: 21300000, guid: fb996b50283b05846af081641fc4109d, type: 3}
+  questions:
+  - {fileID: 11400000, guid: a520043a1acfacb4489fc4ab3f6d08a0, type: 2}
+  - {fileID: 11400000, guid: 384dbb0cb6707834395169360002df0e, type: 2}
+  - {fileID: 11400000, guid: b8a6e952da4c8b340a86c3c0ba14382d, type: 2}
+  - {fileID: 11400000, guid: 1a384c5fe5f2a6241a3e89232bd9de31, type: 2}
+  - {fileID: 11400000, guid: 25ac83200ec6e2c40a3737cf41d61e83, type: 2}
+  - {fileID: 11400000, guid: 663d3ae4f383acf498767370aed9ee02, type: 2}
+  - {fileID: 11400000, guid: 07b2f543a400833478f1892a3d06bcc2, type: 2}
+  - {fileID: 11400000, guid: f41e96db05827894189f9c0b15f22e8b, type: 2}
+  - {fileID: 11400000, guid: 43419fcc690e2874eafaaca896c94e9b, type: 2}
+  - {fileID: 11400000, guid: e35011a1ac02a9e47b365d21ef74f00e, type: 2}
+  maxScore: 100
+  minScore: 30

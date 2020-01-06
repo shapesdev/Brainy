@@ -13,6 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   achievementName: Business Adviser
   subjectName: Economics
-  achievementImage: {fileID: 21300000, guid: 34857ef8d28ad564bbe1a269a05baa9a, type: 3}
+  achievementImage: {fileID: 21300000, guid: e7bb45ac69cd77a4280ffaf718a6f510, type: 3}
   description: Complete 10 Economics courses
   goal: 10

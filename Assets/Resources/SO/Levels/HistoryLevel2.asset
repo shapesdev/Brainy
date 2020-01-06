@@ -14,20 +14,30 @@ MonoBehaviour:
   id: 2
   subjectName: History
   levelNumber: 2
-  levelName: fsdfs
-  loseMotivation: 
-  winMotivation: 
+  levelName: Inventions
+  winMotivation: '"I have not failed. I''ve just found 10,000 ways that won''t work."
+    - Thomas Edison'
   levelImage: {fileID: 0}
   questions:
-  - {fileID: 11400000, guid: 4110412c50ac3fd49ba234f73210c308, type: 2}
-  - {fileID: 11400000, guid: a4d54ed3d440098449a6a3ebfdb02578, type: 2}
-  - {fileID: 11400000, guid: 5019e81220f4ba146823e65c6a0d6055, type: 2}
-  - {fileID: 11400000, guid: 29a07d9edd364d44b916e5aca16cfa3f, type: 2}
-  - {fileID: 11400000, guid: 060c5419f9701da429b0ee85f4d674ff, type: 2}
-  - {fileID: 11400000, guid: 8f31553bcb7b1114e9c21d271ac88f2e, type: 2}
-  - {fileID: 11400000, guid: ee6097e41e933c046a453fa4ae3e1980, type: 2}
-  - {fileID: 11400000, guid: 8739373837c0db347945b4062fc0b52e, type: 2}
-  - {fileID: 11400000, guid: 448eb76a5ed1c9546ae02842abe618e3, type: 2}
-  - {fileID: 11400000, guid: 7fada87f922293540beb1b21d58d0126, type: 2}
-  maxScore: 100
-  minScore: 30
+  - {fileID: 11400000, guid: 273f793b116e36f439d23ddf04b2b664, type: 2}
+  - {fileID: 11400000, guid: 435ff09f680b7334f8be362262aa92ea, type: 2}
+  - {fileID: 11400000, guid: 495c978e4c009d2448983b4777beaf2f, type: 2}
+  - {fileID: 11400000, guid: d6f656beb3210a74b996ef2a73df65e9, type: 2}
+  - {fileID: 11400000, guid: 6bc0091e8c83fa744a48c6be61b1a7f4, type: 2}
+  - {fileID: 11400000, guid: 0790ee8f8d533af498773b3078c31597, type: 2}
+  - {fileID: 11400000, guid: 7b580aa259bc7d448a3a50b08de1612f, type: 2}
+  - {fileID: 11400000, guid: 421e27c641be7bf48b749b4f6aa844de, type: 2}
+  - {fileID: 11400000, guid: 40053306a453f6f428e9dc3872a945e9, type: 2}
+  - {fileID: 11400000, guid: ef54da711603df7499ffa967ecd1fec1, type: 2}
+  - {fileID: 11400000, guid: e6966a73c65637441a79f6a25dc306ba, type: 2}
+  - {fileID: 11400000, guid: 1d78ac7a7d637574ea67eecc0e4a59e6, type: 2}
+  - {fileID: 11400000, guid: f2a95ed8061b7604ea1d2b47fbcdb7fe, type: 2}
+  - {fileID: 11400000, guid: c020b6773ca6b8740af24e7d3e615639, type: 2}
+  - {fileID: 11400000, guid: 02132230669defd4d862c9d6184b3d7e, type: 2}
+  - {fileID: 11400000, guid: cb4159e87f5eac644b923174beddf1a0, type: 2}
+  - {fileID: 11400000, guid: 9f15d29bb4f36a949a62437b2352a0c1, type: 2}
+  - {fileID: 11400000, guid: e1c067df63ca3554bbd5829a7d45a4dc, type: 2}
+  - {fileID: 11400000, guid: 0a065f5653e16c24f99346958fc625d2, type: 2}
+  - {fileID: 11400000, guid: 6c19c5cdcef014749899e35059cf5348, type: 2}
+  maxScore: 200
+  minScore: 50

@@ -24,14 +24,11 @@ public class LevelSelectionModel {
             if (allLevels[i].completed == true)
             {
                 amount += 1;
+
                 if (allLevels.Exists(x => x.levelType.levelNumber == allLevels[i].levelType.levelNumber + 1 && x.levelType.id == allLevels[i].levelType.id) == true)
                 {
                     var index2 = allLevels.FindIndex(x => x.levelType.levelNumber == allLevels[i].levelType.levelNumber + 1 && x.levelType.id == allLevels[i].levelType.id);
                     allLevels[index2].unlocked = true;
-                }
-                else
-                {
-
                 }
             }
         }

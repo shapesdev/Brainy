@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd69bfc483fc26c4a87002572d9a17c2, type: 3}
+  m_Name: EconomicsLevel6
+  m_EditorClassIdentifier: 
+  id: 3
+  subjectName: Economics
+  levelNumber: 6
+  levelName: Competition
+  winMotivation: '"If you do build a great experience, customers tell each other about
+    that. Word of mouth is very powerful." - Jeff Bezos'
+  levelImage: {fileID: 21300000, guid: 7658c1bf80fc47146aee819ca573fdcf, type: 3}
+  questions:
+  - {fileID: 11400000, guid: 4b3c5cb2d71a8e44aa246ecc57b11cca, type: 2}
+  - {fileID: 11400000, guid: b763561465d4a7847b30492bd25de0da, type: 2}
+  - {fileID: 11400000, guid: c532bb9d47c37b1479d469b694a72940, type: 2}
+  - {fileID: 11400000, guid: 2493d5fac0a379d4aa87bc0f5c0956c9, type: 2}
+  - {fileID: 11400000, guid: 5f90fc7e2c120cb4aa1ee086ea886c67, type: 2}
+  - {fileID: 11400000, guid: 0e2b3de7b0b37a0488d238f1dda7b190, type: 2}
+  - {fileID: 11400000, guid: f856a3c5d02203849adbad2b5aa5d2f1, type: 2}
+  - {fileID: 11400000, guid: 07bb0cdc6ef73a24ebad69278eb88855, type: 2}
+  - {fileID: 11400000, guid: 039b0f812d6ebc64ebea77430939d4e9, type: 2}
+  - {fileID: 11400000, guid: 30a08ef174bb6f84d9e02b0d170ee59c, type: 2}
+  maxScore: 100
+  minScore: 40

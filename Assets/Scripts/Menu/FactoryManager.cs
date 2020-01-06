@@ -42,6 +42,7 @@ public class FactoryManager : MonoBehaviour {
 
     private void InitializeLevelSelection()
     {
+        PlayerPrefs.SetInt("Rate", PlayerPrefs.GetInt("Rate") + 1);
         LevelSelectionFactory levelFactory = new LevelSelectionFactory();
         levelFactory.Load(levelSelectionView, achievementsArray);
     }

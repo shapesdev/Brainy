@@ -14,20 +14,20 @@ MonoBehaviour:
   id: 2
   subjectName: History
   levelNumber: 3
-  levelName: fsdfs
-  loseMotivation: 
-  winMotivation: 
+  levelName: People
+  winMotivation: '"If you can''t explain it simply, you don''t understand it well
+    enough." - Albert Einstein'
   levelImage: {fileID: 0}
   questions:
-  - {fileID: 11400000, guid: 4110412c50ac3fd49ba234f73210c308, type: 2}
-  - {fileID: 11400000, guid: a4d54ed3d440098449a6a3ebfdb02578, type: 2}
-  - {fileID: 11400000, guid: 5019e81220f4ba146823e65c6a0d6055, type: 2}
-  - {fileID: 11400000, guid: 29a07d9edd364d44b916e5aca16cfa3f, type: 2}
-  - {fileID: 11400000, guid: 060c5419f9701da429b0ee85f4d674ff, type: 2}
-  - {fileID: 11400000, guid: 8f31553bcb7b1114e9c21d271ac88f2e, type: 2}
-  - {fileID: 11400000, guid: ee6097e41e933c046a453fa4ae3e1980, type: 2}
-  - {fileID: 11400000, guid: 8739373837c0db347945b4062fc0b52e, type: 2}
-  - {fileID: 11400000, guid: 448eb76a5ed1c9546ae02842abe618e3, type: 2}
-  - {fileID: 11400000, guid: 7fada87f922293540beb1b21d58d0126, type: 2}
+  - {fileID: 11400000, guid: 1bd35461737cf8f4eaed40a73800fa0c, type: 2}
+  - {fileID: 11400000, guid: ee77dfb85df80884d84aebf1ae78859c, type: 2}
+  - {fileID: 11400000, guid: 4b1e545a840c5ce439dd6d8fba45ec39, type: 2}
+  - {fileID: 11400000, guid: e979dbfee437607408bf667c79f711e4, type: 2}
+  - {fileID: 11400000, guid: 88a7edda5aa496e40b04dcc9a9b4b4df, type: 2}
+  - {fileID: 11400000, guid: fe79e3f6eb4fe774cac7e48779f8cc25, type: 2}
+  - {fileID: 11400000, guid: f00933cc514e1954abab79fb0e025698, type: 2}
+  - {fileID: 11400000, guid: 4308d5b1b1f99ef45bd93cd4aa1c5ddd, type: 2}
+  - {fileID: 11400000, guid: d6097eb7dc0360144a4d421dec726c5e, type: 2}
+  - {fileID: 11400000, guid: f3e0577cca3d0ee4dbcacb3195345da6, type: 2}
   maxScore: 100
   minScore: 30

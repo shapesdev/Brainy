@@ -14,19 +14,20 @@ MonoBehaviour:
   id: 2
   subjectName: History
   levelNumber: 1
-  levelName: Historical
-  winMotivation: "\u201CHistory is written by winners.\u201D - Napoleon Bonaparte"
+  levelName: Mythology
+  winMotivation: "\u201CNo man ever steps in the same river twice, for it\u2019s not
+    the same river and he\u2019s not the same man.\u201D - Heraclitus"
   levelImage: {fileID: 0}
   questions:
-  - {fileID: 11400000, guid: 4110412c50ac3fd49ba234f73210c308, type: 2}
-  - {fileID: 11400000, guid: a4d54ed3d440098449a6a3ebfdb02578, type: 2}
-  - {fileID: 11400000, guid: 5019e81220f4ba146823e65c6a0d6055, type: 2}
-  - {fileID: 11400000, guid: 29a07d9edd364d44b916e5aca16cfa3f, type: 2}
-  - {fileID: 11400000, guid: 060c5419f9701da429b0ee85f4d674ff, type: 2}
-  - {fileID: 11400000, guid: 8f31553bcb7b1114e9c21d271ac88f2e, type: 2}
-  - {fileID: 11400000, guid: ee6097e41e933c046a453fa4ae3e1980, type: 2}
-  - {fileID: 11400000, guid: 8739373837c0db347945b4062fc0b52e, type: 2}
-  - {fileID: 11400000, guid: 448eb76a5ed1c9546ae02842abe618e3, type: 2}
-  - {fileID: 11400000, guid: 7fada87f922293540beb1b21d58d0126, type: 2}
+  - {fileID: 11400000, guid: cb8ed55ff478df948af83c5c212abb62, type: 2}
+  - {fileID: 11400000, guid: d450bcaac2d94d942ac435ac5e21fec6, type: 2}
+  - {fileID: 11400000, guid: c8e2da4001550e249a978f56ef1b3a32, type: 2}
+  - {fileID: 11400000, guid: 4e2815e92569b1e40b59fb706746de59, type: 2}
+  - {fileID: 11400000, guid: cf4d4026575bcce4eafd84ce8df100a0, type: 2}
+  - {fileID: 11400000, guid: c289a0098bb441f428e05f47ccabceed, type: 2}
+  - {fileID: 11400000, guid: 903714b2e09967b42a0cd5f506f893e3, type: 2}
+  - {fileID: 11400000, guid: 1a59b87882f45c64a889b02e8c402968, type: 2}
+  - {fileID: 11400000, guid: da225aabf4c925847a325caca95ca8dd, type: 2}
+  - {fileID: 11400000, guid: 5f98e18516582eb4394432afd3bb121c, type: 2}
   maxScore: 100
   minScore: 30

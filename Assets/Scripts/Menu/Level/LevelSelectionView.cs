@@ -17,6 +17,8 @@ public class LevelSelectionView : MonoBehaviour, ILevelSelectionView {
     public Text scoreText;
     public Text iqPointsText;
 
+    public GameObject ratePanel;
+
     bool activateEvent = false;
 
     public event EventHandler<OnValueUpdateEventArgs> OnValueUpdate;
@@ -101,6 +103,21 @@ public class LevelSelectionView : MonoBehaviour, ILevelSelectionView {
                 levelBorders[i].gameObject.SetActive(false);
             }
         }
+
+        if(PlayerPrefs.GetInt("Rate") % 3 == 0)
+        {
+            ratePanel.SetActive(true);
+        }
+    }
+
+    public void Rate()
+    {
+        Application.OpenURL("http://unity3d.com/");
+    }
+
+    public void TurnOffRate()
+    {
+        ratePanel.SetActive(false);
     }
 
     public void ShowLevel(List<LevelModel> levels, int current, Transform levelPosition)

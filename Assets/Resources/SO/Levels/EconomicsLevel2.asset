@@ -17,7 +17,7 @@ MonoBehaviour:
   levelName: Cars
   winMotivation: "\u201CWinning isn't everything - but wanting to win is.\u201D -
     Vince Lombardi"
-  levelImage: {fileID: 21300000, guid: e101893462243c04d8c3503dd15586f5, type: 3}
+  levelImage: {fileID: 21300000, guid: 8ab6a50b6f6072647b05364e838fdce2, type: 3}
   questions:
   - {fileID: 11400000, guid: 71bc8e40a12aa9446b6e9f38c0914ffc, type: 2}
   - {fileID: 11400000, guid: 21ad925e47ce22e448fa1622d3cee5d7, type: 2}

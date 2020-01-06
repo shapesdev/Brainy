@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd69bfc483fc26c4a87002572d9a17c2, type: 3}
+  m_Name: EconomicsLevel7
+  m_EditorClassIdentifier: 
+  id: 3
+  subjectName: Economics
+  levelNumber: 7
+  levelName: Records
+  winMotivation: '"The reason we''re successful, darling? My overall charisma, of
+    course." - Freddie Mercury'
+  levelImage: {fileID: 21300000, guid: fb996b50283b05846af081641fc4109d, type: 3}
+  questions:
+  - {fileID: 11400000, guid: 441c6931b5a4f5e4ea678269402f191d, type: 2}
+  - {fileID: 11400000, guid: 78823a4f3b4a9ef41a6b3d66caa96ef8, type: 2}
+  - {fileID: 11400000, guid: c8e074718d3404d45bacd20392a8227d, type: 2}
+  - {fileID: 11400000, guid: 61cf1b80234e2574eaf4fecc00e32471, type: 2}
+  - {fileID: 11400000, guid: d4dabb5c73e032c459e8cd27060b18c8, type: 2}
+  - {fileID: 11400000, guid: 582b2c9888595d4469c5859549d22225, type: 2}
+  - {fileID: 11400000, guid: 6dc244567b29b4e4ca0579585c924536, type: 2}
+  - {fileID: 11400000, guid: 246aaec9d0e751944aa7c35c4dfafb2e, type: 2}
+  - {fileID: 11400000, guid: 1e1495cb9d871b44c83a624a6ed796c1, type: 2}
+  - {fileID: 11400000, guid: 642e0a82233534649b28d0cb3accf43b, type: 2}
+  maxScore: 100
+  minScore: 50

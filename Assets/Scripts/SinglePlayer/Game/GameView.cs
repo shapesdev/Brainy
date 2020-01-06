@@ -22,6 +22,7 @@ public class GameView : MonoBehaviour {
     public Text levelName;
     public Text winIqGained;
     public Text questionNr;
+    public Text information;
     public Image soundImage;
 
     public GameObject pictureObject;
@@ -56,6 +57,14 @@ public class GameView : MonoBehaviour {
             soundImage.sprite = SoundOff;
             AudioListener.volume = 0;
         }
+        information.gameObject.SetActive(true);
+        information.text = "Answer " + LevelConfig.instance.levels[LevelConfig.instance.currentlevel].levelType.minScore / 10 +
+            " questions to complete the level";
+    }
+
+    public void TurnOffInformation()
+    {
+        information.gameObject.SetActive(false);
     }
 
     public void ShowQuestion(Question question)

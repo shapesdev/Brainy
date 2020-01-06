@@ -53,6 +53,11 @@ public class GameController {
 
     private void ShowQuestion(int questionNr)
     {
+        if(questionNr > 0)
+        {
+            view.TurnOffInformation();
+        }
+
         if(questionNr < model.GetlAllQuestions().Length)
         {
             view.ShowQuestion(model.GetlAllQuestions()[questionNr]);

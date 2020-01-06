@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a0c621bfdda7aa4fba4f22811d8bbb4, type: 3}
+  m_Name: PictureAnswersQuestion1
+  m_EditorClassIdentifier: 
+  question: Leonardo da Vinci - Parachute
+  correctAnswer: 
+  options: []
+  imageOptions:
+  - {fileID: 21300000, guid: 7d975ee9657460c42a5bb897d8392fb6, type: 3}
+  - {fileID: 21300000, guid: 583448ba83f39004e8e6c20e4ea163cb, type: 3}
+  - {fileID: 21300000, guid: 744b3171f63c8b642bcd4109e1a09a9d, type: 3}
+  - {fileID: 21300000, guid: f87788687f4b0044e939ede6f0768efa, type: 3}
+  picture: {fileID: 21300000, guid: 583448ba83f39004e8e6c20e4ea163cb, type: 3}

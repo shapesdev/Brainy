@@ -14,20 +14,20 @@ MonoBehaviour:
   id: 3
   subjectName: Economics
   levelNumber: 3
-  levelName: Entrepreneurs
-  winMotivation: '"If you really look closely, most overnight successes took a long
-    time." - Steve Jobs'
-  levelImage: {fileID: 21300000, guid: e101893462243c04d8c3503dd15586f5, type: 3}
+  levelName: Basics
+  winMotivation: "\u201CWhen something is important enough, you do it even if the
+    odds are not in your favor.\u201D - Elon Musk"
+  levelImage: {fileID: 21300000, guid: fb996b50283b05846af081641fc4109d, type: 3}
   questions:
-  - {fileID: 11400000, guid: c93c3c0e387b51d4793d5ace7bd54264, type: 2}
-  - {fileID: 11400000, guid: 4d706570e455c4946a2c1f64d15b8753, type: 2}
-  - {fileID: 11400000, guid: 66e2a53ce98637b4595ae0532cf9f673, type: 2}
-  - {fileID: 11400000, guid: e3dae612af2cecc4eacaf02a6a7a78e2, type: 2}
-  - {fileID: 11400000, guid: cf35fff29166c7847a01481c0a1dca39, type: 2}
-  - {fileID: 11400000, guid: d3f21bed8b61559409041d948ece8bfd, type: 2}
-  - {fileID: 11400000, guid: 18e5f6f919d9f0e429d9a91b3ecce76a, type: 2}
-  - {fileID: 11400000, guid: 82868ea8073a14d4895ee7da34d90e7b, type: 2}
-  - {fileID: 11400000, guid: 6c3c3f0c729b28e49bc9d860a1189aee, type: 2}
-  - {fileID: 11400000, guid: b2e339de73b2954428fb49af5cfa15f3, type: 2}
+  - {fileID: 11400000, guid: 17ab28084a4f15e4a9e1ead55c195ff0, type: 2}
+  - {fileID: 11400000, guid: 7e604110d33532649b180f60f859b94f, type: 2}
+  - {fileID: 11400000, guid: 3a6c2ee0057bf4a4780530ff6161c6de, type: 2}
+  - {fileID: 11400000, guid: f2d7942e9949f7642a181eddfc3ec2f9, type: 2}
+  - {fileID: 11400000, guid: d2da48f902505f442848acef310c0630, type: 2}
+  - {fileID: 11400000, guid: a51c6ba80f7816b4ab739ae2abe1f86d, type: 2}
+  - {fileID: 11400000, guid: 776e53fa563509b499cc0e0606106714, type: 2}
+  - {fileID: 11400000, guid: f5b9f9a9b60f0874eb3ad921c22b7074, type: 2}
+  - {fileID: 11400000, guid: e4d189b0c2feffb44b07fa8d83e64f73, type: 2}
+  - {fileID: 11400000, guid: 195f1040eb0150345a009a6aa415ea14, type: 2}
   maxScore: 100
   minScore: 30

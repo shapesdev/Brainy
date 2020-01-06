@@ -120,11 +120,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114493193657266636, guid: 6aa1c9f1e0f4cf446b2bf74f63c48861,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 224463308600420838, guid: 6aa1c9f1e0f4cf446b2bf74f63c48861,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -218,24 +213,6 @@ Prefab:
     - target: {fileID: 1677680714343054, guid: 6aa1c9f1e0f4cf446b2bf74f63c48861, type: 2}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 114493193657266636, guid: 6aa1c9f1e0f4cf446b2bf74f63c48861,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114493193657266636, guid: 6aa1c9f1e0f4cf446b2bf74f63c48861,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1677680714343054, guid: 6aa1c9f1e0f4cf446b2bf74f63c48861, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1617731349520296, guid: 6aa1c9f1e0f4cf446b2bf74f63c48861, type: 2}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6aa1c9f1e0f4cf446b2bf74f63c48861, type: 2}

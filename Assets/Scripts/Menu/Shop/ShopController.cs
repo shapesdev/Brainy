@@ -46,7 +46,15 @@ public class ShopController {
     private void HandleOnUnlockSkin(object sender, OnUnlockSkinEventArgs e)
     {
         skinToUpdate = e.skinNr;
-        UpdateVC();
+
+        if(e.skinNr < model.GetAllSkins().Length / 2)
+        {
+            UpdateVC();
+        }
+        else if(e.skinNr > model.GetAllSkins().Length / 2 - 1)
+        {
+            UpdateVC2();
+        }
     }
 
     private void UpdateVC()
@@ -57,6 +65,16 @@ public class ShopController {
             FunctionParameter = new { Testing = "im a test" },
             GeneratePlayStreamEvent = true
         }, OnModifyVirtualCurrency, OnModifyVirtualCurrencyFailed );
+    }
+
+    private void UpdateVC2()
+    {
+        PlayFabClientAPI.ExecuteCloudScript(new ExecuteCloudScriptRequest()
+        {
+            FunctionName = "UpdateCurrency2",
+            FunctionParameter = new { Testing = "im a test" },
+            GeneratePlayStreamEvent = true
+        }, OnModifyVirtualCurrency, OnModifyVirtualCurrencyFailed);
     }
 
     private void OnModifyVirtualCurrencyFailed(PlayFabError obj)

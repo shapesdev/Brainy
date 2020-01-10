@@ -130,7 +130,7 @@ public class PictureAnswersDisplayer : MonoBehaviour {
                     var buttonColor = optionButtons[i].colors;
                     buttonColor.disabledColor = new Color32(200, 200, 200, 200);
                     optionButtons[i].colors = buttonColor;
-                    PlayerPrefs.GetInt("HP", PlayerPrefs.GetInt("HP") - 10);
+                    PlayerPrefs.SetInt("HP", PlayerPrefs.GetInt("HP") - 10);
                     break;
                 }
             }
@@ -169,7 +169,7 @@ public class PictureAnswersDisplayer : MonoBehaviour {
                 optionButtons[0].interactable = false;
                 optionButtons[3].interactable = false;
             }
-            PlayerPrefs.GetInt("HP", PlayerPrefs.GetInt("HP") - 15);
+            PlayerPrefs.SetInt("HP", PlayerPrefs.GetInt("HP") - 15);
         }
         else
         {
@@ -210,7 +210,7 @@ public class PictureAnswersDisplayer : MonoBehaviour {
                 optionButtons[0].interactable = false;
                 optionButtons[1].interactable = false;
             }
-            PlayerPrefs.GetInt("HP", PlayerPrefs.GetInt("HP") - 15);
+            PlayerPrefs.SetInt("HP", PlayerPrefs.GetInt("HP") - 15);
         }
         else
         {

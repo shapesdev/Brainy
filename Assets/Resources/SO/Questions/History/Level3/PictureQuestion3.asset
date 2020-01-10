@@ -14,9 +14,10 @@ MonoBehaviour:
   question: Who is this person?
   correctAnswer: Julius Caesar
   options:
-  - Julius Caesar
-  - Alexander the Great
-  - George Washington
   - Moses
+  - Alexander the Great
+  - Julius Caesar
+  - George Washington
   imageOptions: []
   picture: {fileID: 21300000, guid: ca036a5ab40097443a37a8e4ac653057, type: 3}
+  author: Andrea del Sarto

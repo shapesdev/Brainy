@@ -82,7 +82,7 @@ public class GameView : MonoBehaviour {
                 pictureAnswersObject.SetActive(false);
             }
             pictureObject.SetActive(true);
-            pictureObject.GetComponent<PictureQuestionDisplayer>().DisplayQuestion(question.question, question.options, question.picture, question.correctAnswer, gameController);
+            pictureObject.GetComponent<PictureQuestionDisplayer>().DisplayQuestion(question.question, question.options, question.picture, question.correctAnswer, gameController, question.author);
         }
         else if(question.GetType().IsAssignableFrom(typeof(GeneralQuestion)))
         {
@@ -207,51 +207,72 @@ public class GameView : MonoBehaviour {
 
     public void RemoveOneWrongOption()
     {
-        if (pictureObject.activeInHierarchy)
+        if(PlayerPrefs.GetInt("HP") >= 10)
         {
-            pictureObject.GetComponent<PictureQuestionDisplayer>().RemoveOneWrong();
+            if (pictureObject.activeInHierarchy)
+            {
+                pictureObject.GetComponent<PictureQuestionDisplayer>().RemoveOneWrong();
+            }
+            else if (generalObject.activeInHierarchy)
+            {
+                generalObject.GetComponent<GeneralQuestionDisplayer>().RemoveOneWrong();
+            }
+            else if (pictureAnswersObject.activeInHierarchy)
+            {
+                pictureAnswersObject.GetComponent<PictureAnswersDisplayer>().RemoveOneWrong();
+            }
         }
-        else if (generalObject.activeInHierarchy)
+        else
         {
-            generalObject.GetComponent<GeneralQuestionDisplayer>().RemoveOneWrong();
-        }
-        else if (pictureAnswersObject.activeInHierarchy)
-        {
-            pictureAnswersObject.GetComponent<PictureAnswersDisplayer>().RemoveOneWrong();
+            Debug.Log("NOT ENOUGH HP");
         }
         hintPanel.SetActive(false);
     }
 
     public void RemoveVerticalOptions()
     {
-        if (pictureObject.activeInHierarchy)
+        if (PlayerPrefs.GetInt("HP") >= 15)
         {
-            pictureObject.GetComponent<PictureQuestionDisplayer>().RemoveVertical();
+            if (pictureObject.activeInHierarchy)
+            {
+                pictureObject.GetComponent<PictureQuestionDisplayer>().RemoveVertical();
+            }
+            else if (generalObject.activeInHierarchy)
+            {
+                generalObject.GetComponent<GeneralQuestionDisplayer>().RemoveVertical();
+            }
+            else if (pictureAnswersObject.activeInHierarchy)
+            {
+                pictureAnswersObject.GetComponent<PictureAnswersDisplayer>().RemoveVertical();
+            }
         }
-        else if (generalObject.activeInHierarchy)
+        else
         {
-            generalObject.GetComponent<GeneralQuestionDisplayer>().RemoveVertical();
-        }
-        else if (pictureAnswersObject.activeInHierarchy)
-        {
-            pictureAnswersObject.GetComponent<PictureAnswersDisplayer>().RemoveVertical();
+            Debug.Log("NOT ENOUGH HP");
         }
         hintPanel.SetActive(false);
     }
 
     public void RemoveHorizontalOptions()
     {
-        if (pictureObject.activeInHierarchy)
+        if(PlayerPrefs.GetInt("HP") >= 15)
         {
-            pictureObject.GetComponent<PictureQuestionDisplayer>().RemoveHorizontal();
+            if (pictureObject.activeInHierarchy)
+            {
+                pictureObject.GetComponent<PictureQuestionDisplayer>().RemoveHorizontal();
+            }
+            else if (generalObject.activeInHierarchy)
+            {
+                generalObject.GetComponent<GeneralQuestionDisplayer>().RemoveHorizontal();
+            }
+            else if (pictureAnswersObject.activeInHierarchy)
+            {
+                pictureAnswersObject.GetComponent<PictureAnswersDisplayer>().RemoveHorizontal();
+            }
         }
-        else if (generalObject.activeInHierarchy)
+        else
         {
-            generalObject.GetComponent<GeneralQuestionDisplayer>().RemoveHorizontal();
-        }
-        else if (pictureAnswersObject.activeInHierarchy)
-        {
-            pictureAnswersObject.GetComponent<PictureAnswersDisplayer>().RemoveHorizontal();
+            Debug.Log("NOTY EONUGH HP");
         }
         hintPanel.SetActive(false);
     }

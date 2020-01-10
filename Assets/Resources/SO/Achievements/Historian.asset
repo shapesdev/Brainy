@@ -14,5 +14,5 @@ MonoBehaviour:
   achievementName: War Expert
   subjectName: History
   achievementImage: {fileID: 21300000, guid: 324dee79416b25c42b8aedb41c245e8d, type: 3}
-  description: Complete 10 History courses
+  description: Complete all History courses
   goal: 10

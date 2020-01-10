@@ -23,6 +23,8 @@ public class ShopView : MonoBehaviour, IShopView {
     public GameObject loadingPurchase;
 
     public Image skinDisplay;
+    public Text priceText;
+    public Text purchaseHint;
 
     int pageNr;
     int lastSkin;
@@ -199,11 +201,21 @@ public class ShopView : MonoBehaviour, IShopView {
 
     public void UnlockSkin(int skinId)
     {
-        if(PlayerPrefs.GetInt("Dmd") != 0)
+        if (PlayerPrefs.GetInt("Dmd") != 0)
         {
             confirmPanel.SetActive(true);
             skinDisplay.sprite = skins[skinId].sprite;
             skinToBuy = skinId;
+            if(skinToBuy < skins.Length / 2)
+            {
+                priceText.text = "50";
+                purchaseHint.text = "+" + 50 + " Hint Points";
+            }
+            else if(skinToBuy > skins.Length / 2 - 1)
+            {
+                priceText.text = "100";
+                purchaseHint.text = "+" + 100 + " Hint Points";
+            }
         }
         else
         {
@@ -214,18 +226,37 @@ public class ShopView : MonoBehaviour, IShopView {
 
     public void BuySkin()
     {
-        if (PlayerPrefs.GetInt("Dmd") >= 50)
+        if(skinToBuy < skins.Length / 2)
         {
-            loadingPurchase.SetActive(true);
-            confirmPanel.SetActive(false);
-            var eventArgs = new OnUnlockSkinEventArgs(skinToBuy);
-            OnUnlock(this, eventArgs);
+            if (PlayerPrefs.GetInt("Dmd") >= 50)
+            {
+                loadingPurchase.SetActive(true);
+                confirmPanel.SetActive(false);
+                var eventArgs = new OnUnlockSkinEventArgs(skinToBuy);
+                OnUnlock(this, eventArgs);
+            }
+            else
+            {
+                confirmPanel.SetActive(false);
+                notificationNotEnoughDiamonds.gameObject.SetActive(true);
+                Invoke("CloseNotification", 2f);
+            }
         }
-        else
+        else if(skinToBuy > skins.Length / 2 - 1)
         {
-            confirmPanel.SetActive(false);
-            notificationNotEnoughDiamonds.gameObject.SetActive(true);
-            Invoke("CloseNotification", 2f);
+            if (PlayerPrefs.GetInt("Dmd") >= 100)
+            {
+                loadingPurchase.SetActive(true);
+                confirmPanel.SetActive(false);
+                var eventArgs = new OnUnlockSkinEventArgs(skinToBuy);
+                OnUnlock(this, eventArgs);
+            }
+            else
+            {
+                confirmPanel.SetActive(false);
+                notificationNotEnoughDiamonds.gameObject.SetActive(true);
+                Invoke("CloseNotification", 2f);
+            }
         }
     }
 
@@ -243,6 +274,14 @@ public class ShopView : MonoBehaviour, IShopView {
     {
         buttonLocks[skinId].SetActive(false);
         unlockedButtons[skinId].interactable = true;
+        if (skinToBuy < skins.Length / 2)
+        {
+            PlayerPrefs.SetInt("HP", PlayerPrefs.GetInt("HP") + 50);
+        }
+        else if(skinToBuy > skins.Length / 2 - 1)
+        {
+            PlayerPrefs.SetInt("HP", PlayerPrefs.GetInt("HP") + 100);
+        }
     }
 
     public void SelectSkin(int skinId)

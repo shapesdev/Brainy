@@ -12,4 +12,6 @@ public class Question : ScriptableObject
     public List<Sprite> imageOptions = new List<Sprite>();
 
     public Sprite picture;
+
+    public string author;
 }

@@ -104,9 +104,10 @@ public class LevelSelectionView : MonoBehaviour, ILevelSelectionView {
             }
         }
 
-        if(PlayerPrefs.GetInt("Rate") % 3 == 0)
+        if(PlayerPrefs.GetInt("Rate") % 4 == 0)
         {
             ratePanel.SetActive(true);
+            PlayerPrefs.SetInt("Rate", PlayerPrefs.GetInt("Rate") + 1);
         }
     }
 

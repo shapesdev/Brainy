@@ -14,6 +14,7 @@ public class QuestionDisplayer : MonoBehaviour {
     private Text pickedOptionText;
     public Button[] optionButtons;
     private Button pickedButton;
+    public string authorCredits;
 
     public GameController gameController;
 
@@ -103,7 +104,7 @@ public class QuestionDisplayer : MonoBehaviour {
                 if (optionsText[i].text != correctAnswer && optionButtons[i].interactable == true)
                 {
                     optionButtons[i].interactable = false;
-                    PlayerPrefs.GetInt("HP", PlayerPrefs.GetInt("HP") - 10);
+                    PlayerPrefs.SetInt("HP", PlayerPrefs.GetInt("HP") - 10);
                     break;
                 }
             }

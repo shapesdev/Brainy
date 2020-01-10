@@ -30,6 +30,7 @@ public class LevelSelectionFactory
         if (!PlayerPrefs.HasKey("Levels"))
         {
             model = new LevelSelectionModel(levelLoader.LoadDefaultData());
+            PlayerPrefs.SetInt("HP", 50);
         }
         else
         {
@@ -59,13 +60,16 @@ public class LevelSelectionFactory
                 }
             }
         }
-
-        if(model.allLevels.Count == tempModel.allLevels.Count)
+        else if(model.allLevels.Count == tempModel.allLevels.Count)
         {
             for(int i = 0; i < model.allLevels.Count; i++)
             {
                 model.allLevels[i].levelType = tempModel.allLevels[i].levelType;
             }
+        }
+        else if(model.allLevels.Count > tempModel.allLevels.Count)
+        {
+            model.allLevels = tempModel.allLevels;
         }
     }
 

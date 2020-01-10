@@ -14,9 +14,10 @@ MonoBehaviour:
   question: Who is this person?
   correctAnswer: Leonardo da Vinci
   options:
-  - Leonardo da Vinci
   - Raphael
+  - Leonardo da Vinci
   - Michelangelo
   - Giovanni Bellini
   imageOptions: []
   picture: {fileID: 21300000, guid: b396799b46c511d49a803af04094e7be, type: 3}
+  author: Leonardo da Vinci - www.vivoscuola.it

@@ -14,9 +14,10 @@ MonoBehaviour:
   question: Who is this person?
   correctAnswer: Albert Einstein
   options:
-  - Albert Einstein
   - Hugo Grotius
+  - Albert Einstein
   - William Shakespeare
   - Isaac Newton
   imageOptions: []
   picture: {fileID: 21300000, guid: 97f230f6fb18bf547b1009e7312b0fce, type: 3}
+  author: 

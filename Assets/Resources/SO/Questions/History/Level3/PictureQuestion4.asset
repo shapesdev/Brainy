@@ -14,9 +14,10 @@ MonoBehaviour:
   question: Who is this person?
   correctAnswer: Nikola Tesla
   options:
-  - Nikola Tesla
-  - Karl Marx
   - Johannes Gutenberg
+  - Nikola Tesla
   - Vladimir Lenin
+  - Karl Marx
   imageOptions: []
   picture: {fileID: 21300000, guid: 2d95fc88b75d24d4fb058837083412d3, type: 3}
+  author: "Z\xE1tonyi S\xE1ndo"

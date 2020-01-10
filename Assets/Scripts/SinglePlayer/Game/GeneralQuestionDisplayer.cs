@@ -55,7 +55,7 @@ public class GeneralQuestionDisplayer : QuestionDisplayer {
                 optionButtons[0].interactable = false;
                 optionButtons[3].interactable = false;
             }
-            PlayerPrefs.GetInt("HP", PlayerPrefs.GetInt("HP") - 15);
+            PlayerPrefs.SetInt("HP", PlayerPrefs.GetInt("HP") - 15);
         }
         else if(amount == 1)
         {
@@ -66,7 +66,7 @@ public class GeneralQuestionDisplayer : QuestionDisplayer {
                     optionButtons[i].interactable = false;
                 }
             }
-            PlayerPrefs.GetInt("HP", PlayerPrefs.GetInt("HP") - 15);
+            PlayerPrefs.SetInt("HP", PlayerPrefs.GetInt("HP") - 15);
         }
     }
 
@@ -94,7 +94,7 @@ public class GeneralQuestionDisplayer : QuestionDisplayer {
                 optionButtons[0].interactable = false;
                 optionButtons[1].interactable = false;
             }
-            PlayerPrefs.GetInt("HP", PlayerPrefs.GetInt("HP") - 15);
+            PlayerPrefs.SetInt("HP", PlayerPrefs.GetInt("HP") - 15);
         }
         else if (amount == 1)
         {
@@ -105,7 +105,7 @@ public class GeneralQuestionDisplayer : QuestionDisplayer {
                     optionButtons[i].interactable = false;
                 }
             }
-            PlayerPrefs.GetInt("HP", PlayerPrefs.GetInt("HP") - 15);
+            PlayerPrefs.SetInt("HP", PlayerPrefs.GetInt("HP") - 15);
         }
     }
 }

@@ -25,11 +25,11 @@ public class FactoryManager : MonoBehaviour {
         //PlayerPrefs.DeleteAll();
         string deviceId = SystemInfo.deviceUniqueIdentifier;
 
-        InitializePlayFab(deviceId);
-        playFabController.OnLoggedIn += HandleOnLoggedIn;
-
         LoadSkins();
         InitializeLevelSelection();
+
+        InitializePlayFab(deviceId);
+        playFabController.OnLoggedIn += HandleOnLoggedIn;
     }
 
     private void OnDisable()

@@ -14,9 +14,10 @@ MonoBehaviour:
   question: Who is this person?
   correctAnswer: Adolf Hitler
   options:
-  - Adolf Hitler
-  - Theodore Roosevelt
-  - Joseph Stalin
   - Winston Churchill
+  - Joseph Stalin
+  - Theodore Roosevelt
+  - Adolf Hitler
   imageOptions: []
   picture: {fileID: 21300000, guid: 10520ba0b2a448e4f930aa82aed9b80e, type: 3}
+  author: Bundesarchiv

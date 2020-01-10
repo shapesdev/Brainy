@@ -14,9 +14,10 @@ MonoBehaviour:
   question: Who is this person?
   correctAnswer: Charles Darwin
   options:
+  - Martin Luther King, Jr.
   - Charles Darwin
   - Mahatma Gandhi
-  - Martin Luther King, Jr.
   - Galileo Galilei
   imageOptions: []
   picture: {fileID: 21300000, guid: dd79393fcce688442b86f9ae1ce0bc2e, type: 3}
+  author: 

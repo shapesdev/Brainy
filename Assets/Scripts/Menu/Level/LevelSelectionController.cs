@@ -33,26 +33,30 @@ public class LevelSelectionController {
     private void AddFavoriteSubject()
     {
         string subject = "Unknown";
-        int completedCount = 0;
-        int points = 0;
+        string tempSubject = "";
+        float currrentHighest = 0;
+        var categories = model.GetCategories();
 
-        foreach (var item in model.GetLevels())
+        foreach(var item in categories)
         {
-            int temp = 0;
-            int tempPoints = 0;
-            foreach (var itemas in item)
+            int totalPoints = 0;
+            int levelCount = 0;
+
+            for(int i = 0; i < model.allLevels.Count; i++)
             {
-                if(itemas.completed == true)
+                if (model.allLevels[i].levelType.GetType() == item.Value)
                 {
-                    temp += 1;
-                    tempPoints += itemas.currentScore;
+                    tempSubject = model.allLevels[i].levelType.subjectName;
+                    levelCount++;
+                    totalPoints += model.allLevels[i].currentScore;
                 }
             }
-            if(temp > completedCount && tempPoints > points)
+
+            float check = (totalPoints * levelCount) / 100;
+            if(check > currrentHighest)
             {
-                completedCount = temp;
-                points = tempPoints;
-                subject = item[0].levelType.subjectName;
+                currrentHighest = check;
+                subject = tempSubject;
             }
         }
         PlayerConfig.instance.favSubject = subject;

@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1fe2675733f678498d6f551b138ad63, type: 3}
   m_Name: PictureQuestion14
   m_EditorClassIdentifier: 
-  question: In which country fireworks where invented?
+  question: In which country fireworks were invented?
   correctAnswer: China
   options:
   - South Korea
@@ -20,3 +20,4 @@ MonoBehaviour:
   - United States
   imageOptions: []
   picture: {fileID: 21300000, guid: 955f1e99674ed704f93334dc8f44b14c, type: 3}
+  author: 

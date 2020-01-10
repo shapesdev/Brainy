@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AdManager.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
@@ -156,7 +157,6 @@
      <Compile Include="Assets\PlayFabSdk\Shared\Public\PluginContract.cs" />
      <Compile Include="Assets\PlayFabSdk\Shared\Public\PluginContractKey.cs" />
      <Compile Include="Assets\PlayFabSdk\Shared\Public\PluginManager.cs" />
-     <Compile Include="Assets\rotator.cs" />
      <Compile Include="Assets\Scripts\BlurControl.cs" />
      <Compile Include="Assets\Scripts\Menu\EventArgs\ChangeNameEventArgs.cs" />
      <Compile Include="Assets\Scripts\Menu\EventArgs\LeaderboardClickEventArgs.cs" />
@@ -205,6 +205,7 @@
      <Compile Include="Assets\Scripts\Menu\Shop\OnOpenedShopEventArgs.cs" />
      <Compile Include="Assets\Scripts\Menu\Shop\OnPurchaseSuccesful.cs" />
      <Compile Include="Assets\Scripts\Menu\Shop\PurchaseManager.cs" />
+     <Compile Include="Assets\Scripts\Menu\Shop\rotator.cs" />
      <Compile Include="Assets\Scripts\Menu\Shop\ShopController.cs" />
      <Compile Include="Assets\Scripts\Menu\Shop\ShopFactory.cs" />
      <Compile Include="Assets\Scripts\Menu\Shop\ShopModel.cs" />

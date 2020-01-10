@@ -14,9 +14,10 @@ MonoBehaviour:
   question: Who is this person?
   correctAnswer: Abraham Lincoln
   options:
+  - John Adams
   - Abraham Lincoln
   - Richard Nixon
-  - John Adams
   - Benjamin Harrison
   imageOptions: []
   picture: {fileID: 21300000, guid: 74e480c342c67f247b25f4ee173471ac, type: 3}
+  author: 

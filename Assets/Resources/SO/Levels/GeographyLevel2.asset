@@ -15,7 +15,6 @@ MonoBehaviour:
   subjectName: Geography
   levelNumber: 2
   levelName: Capitals
-  loseMotivation: 
   winMotivation: '"My whole life is about winning. I don''t lose often. I almost never
     lose." - Donald Trump'
   levelImage: {fileID: 21300000, guid: 36f21f2a3b742fd409045ee140284bcb, type: 3}
@@ -30,5 +29,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 146ec47005e6be0428487b0b0056e913, type: 2}
   - {fileID: 11400000, guid: ec2cf91e47b37c7469b033349c3dd5c9, type: 2}
   - {fileID: 11400000, guid: 5c008a2ecfbaffb41a38b5c21a2e83e2, type: 2}
+  - {fileID: 11400000, guid: 935453557d1b54c43bb4805fb3f73cb0, type: 2}
+  - {fileID: 11400000, guid: dc7d608d2ebe6bc43a4c2eb2086e967d, type: 2}
+  - {fileID: 11400000, guid: 732f4e6f6236ab845b1865f5d8a7a042, type: 2}
+  - {fileID: 11400000, guid: f300f1bd697342f4aa466fdee4a21115, type: 2}
+  - {fileID: 11400000, guid: 46b7d064755e7114ba7e3c90434de50c, type: 2}
+  - {fileID: 11400000, guid: d18df050bb620534d9ead353c94a46b4, type: 2}
+  - {fileID: 11400000, guid: eb48ce72cefc61f4ebb4482c74954378, type: 2}
+  - {fileID: 11400000, guid: 883b53763e6042e43b0e9dcfdf936b72, type: 2}
+  - {fileID: 11400000, guid: 01fe6f501a785544e9782f2712cfd3bd, type: 2}
+  - {fileID: 11400000, guid: 94bfe9bf2c3c5f24baaeb93614dc1cf1, type: 2}
+  author: 
   maxScore: 100
-  minScore: 30
+  minScore: 60

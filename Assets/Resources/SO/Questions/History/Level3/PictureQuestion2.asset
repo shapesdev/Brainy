@@ -15,8 +15,9 @@ MonoBehaviour:
   correctAnswer: Martin Luther
   options:
   - Martin Luther
-  - John Calvin
   - Jesus Christ
+  - John Calvin
   - William Shakespeare
   imageOptions: []
   picture: {fileID: 21300000, guid: de471003d0b93cb46b3daa9c626a04a0, type: 3}
+  author: 

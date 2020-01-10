@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Name: Skins
   m_EditorClassIdentifier: 
   skins:
-  - {fileID: 21300000, guid: a799f64a60ff96a45a95c35627f1da46, type: 3}
-  - {fileID: 21300000, guid: a799f64a60ff96a45a95c35627f1da46, type: 3}
-  - {fileID: 21300000, guid: a799f64a60ff96a45a95c35627f1da46, type: 3}
-  - {fileID: 21300000, guid: a799f64a60ff96a45a95c35627f1da46, type: 3}
-  - {fileID: 21300000, guid: a799f64a60ff96a45a95c35627f1da46, type: 3}
-  - {fileID: 21300000, guid: a799f64a60ff96a45a95c35627f1da46, type: 3}
-  - {fileID: 21300000, guid: a799f64a60ff96a45a95c35627f1da46, type: 3}
-  - {fileID: 21300000, guid: a799f64a60ff96a45a95c35627f1da46, type: 3}
-  - {fileID: 21300000, guid: a799f64a60ff96a45a95c35627f1da46, type: 3}
-  - {fileID: 21300000, guid: a799f64a60ff96a45a95c35627f1da46, type: 3}
-  - {fileID: 21300000, guid: a799f64a60ff96a45a95c35627f1da46, type: 3}
-  - {fileID: 21300000, guid: a799f64a60ff96a45a95c35627f1da46, type: 3}
+  - {fileID: 21300000, guid: 703c1311e0296844b9e1a18a10861fe5, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

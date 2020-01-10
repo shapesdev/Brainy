@@ -29,5 +29,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8739373837c0db347945b4062fc0b52e, type: 2}
   - {fileID: 11400000, guid: 448eb76a5ed1c9546ae02842abe618e3, type: 2}
   - {fileID: 11400000, guid: 7fada87f922293540beb1b21d58d0126, type: 2}
+  - {fileID: 11400000, guid: 394786c1561051547afefd03d71fd064, type: 2}
+  - {fileID: 11400000, guid: 7fc152b1786bb25418e7eee3d61f60e7, type: 2}
+  - {fileID: 11400000, guid: e32dcc03dcc46564b98cf16b2b5e8961, type: 2}
+  - {fileID: 11400000, guid: 484cd117995eeab42be2267a88962558, type: 2}
+  - {fileID: 11400000, guid: 478d3fd642ed25244a35cc77ded65cc7, type: 2}
+  - {fileID: 11400000, guid: 35f03fbae69dc7d46bafe822eac8541b, type: 2}
+  - {fileID: 11400000, guid: 7172e93c849bf1147b07f96494e3ce58, type: 2}
+  - {fileID: 11400000, guid: b5ce4abe7d0243b4c9852ad8502e9393, type: 2}
+  - {fileID: 11400000, guid: 9e21170cf5ac4e443bc660f56689e281, type: 2}
+  - {fileID: 11400000, guid: 26cf08dedc2fea3428af92429487ac9f, type: 2}
+  author: 
   maxScore: 100
-  minScore: 30
+  minScore: 50

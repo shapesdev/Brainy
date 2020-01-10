@@ -8,6 +8,7 @@ public class PictureQuestionDisplayer : QuestionDisplayer {
     List<string> shuffledList = new List<string>();
     public Image picture;
     public Image biggerPicture;
+    public Text author;
     public GameObject boostError;
 
     void OnEnable()
@@ -23,14 +24,19 @@ public class PictureQuestionDisplayer : QuestionDisplayer {
     public void MaximizePicture()
     {
         biggerPicture.transform.parent.gameObject.SetActive(true);
+        if(authorCredits.Length > 0)
+        {
+            author.text = "Author: " + authorCredits;
+        }
     }
 
     public void MinimizePicture()
     {
         biggerPicture.transform.parent.gameObject.SetActive(false);
+        author.text = "";
     }
 
-    public void DisplayQuestion(string question, List<string> listas, Sprite sprite, string answer, GameController game)
+    public void DisplayQuestion(string question, List<string> listas, Sprite sprite, string answer, GameController game, string author)
     {
         shuffledList = ShuffleOptions(listas);
         gameController = game;
@@ -43,6 +49,7 @@ public class PictureQuestionDisplayer : QuestionDisplayer {
         picture.sprite = sprite;
         biggerPicture.sprite = sprite;
         correctAnswer = answer;
+        authorCredits = author;
 
         TurnOnButtonInteract();
     }
@@ -71,7 +78,7 @@ public class PictureQuestionDisplayer : QuestionDisplayer {
                 optionButtons[0].interactable = false;
                 optionButtons[3].interactable = false;
             }
-            PlayerPrefs.GetInt("HP", PlayerPrefs.GetInt("HP") - 15);
+            PlayerPrefs.SetInt("HP", PlayerPrefs.GetInt("HP") - 15);
         }
         else
         {
@@ -104,7 +111,7 @@ public class PictureQuestionDisplayer : QuestionDisplayer {
                 optionButtons[0].interactable = false;
                 optionButtons[1].interactable = false;
             }
-            PlayerPrefs.GetInt("HP", PlayerPrefs.GetInt("HP") - 15);
+            PlayerPrefs.SetInt("HP", PlayerPrefs.GetInt("HP") - 15);
         }
         else
         {
